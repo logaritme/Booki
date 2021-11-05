@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+	font-size: 100%;
+    font-family: 'Raleway', Arial , "Arial Black" , Courier New, Helvetica, sans-serif;
+    border-style: ridge;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: coral;
+}
+
+article, details, hgroup, menu {
+    margin: 0;
+	padding: 0;
+	display: block;
+    flex-direction: column;
+
+}
+
+aside {
+    margin: 0;
+	padding: 0;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+b {
+    font-weight: bold;
+}
+
+blockquote, q {
+    margin: 0;
+	padding: 0;
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    margin: 0;
+	padding: 0;
+	content: '';
+	content: none;
+}
+
+body{
+    max-width: 1420px;
+	line-height: 1;
+    display:flex;
+    background-color: grey/* Temporarly grey for my eyes #F2F2F2*/;
+    }
+
+button {
+    margin: 0;
+	padding: 0;
+    background-color:#0065fc;
+}
+
+div, section {
+    /* display: flex; */
+    text-decoration: none;
+}
+
+footer {
+    max-width: 1400px;
+    max-height: 10%;
+    margin: 0;
+	padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
+}
+
+
+footer a:hover{
+    color: teal;
+    /*#DEEBFF*/
+}
+
+form, input {
+    width: 66%;
+    margin: 1%;
+    display: flex;
+    text-decoration: none;
+    line-height: 0;
+}
+
+
+h1 {
+    padding: 10px;
+    */border-style: ridge;*/
+    font-weight: 900;
+}
+
+h2 {
+    padding: 10px;
+    border-style: ridge;
+    font-weight: 900;
+}
+
+h3 {
+    padding: 10px;
+    border-style: ridge;
+    font-weight: 900;
+}
+
+figure {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* flex-direction: column; */
+    background-color: white;
+}
+
+header {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    /* flex-direction: column; */
+    background-color: white;
+}
+
+/*1st header*/
+
+#logo-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    /* align-items: baseline; */
+}
+
+/* Logo Booki */
+
+#logo-size {
+    /*width:81%;*/
+  }
+#logo {
+    float: left;
+    flex-grow: 10%;
+    flex-basis: auto;
+}
+
+/* Liens */
+
+nav {
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    border-style: none;
+}
+
+nav ul li {
+    float: left;
+    display: flex;
+    text-align: center;
+    border-style: none;
+}
+
+#ul-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: flex-end;
+}
+
+/*#link {
+    width: auto;
+    margin: 15%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}*/
+
+.normal-link {
+    font-weight: normal;
+}
+.normal-link:hover {
+    color: turquoise;
+}
+
+/* 2nd header Text*/
+
+#text-only {
+    width: 800px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch; 
+}
+
+/*3rd header Form*/
+
+#form {
+    max-height: 4%;
+    min-height: 2%;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+input {
+    margin: 0;
+	padding: 0 0 0 2%;
+    height: 50px;
+    width: 200px;
+}
+
+input[type="checkbox"]:checked{
+
+}
+
+
+/*4th header Filters and Informations*/
+
+#filters {
+    /*max-height: 4%;
+    min-height: 2%;*/
+    width: 68%;
+    height: 90px;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#real-filters {
+    width: 220px;
+    height: 100%;
+    /*display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;*/
+    align-items: baseline;
+    font-size: x-large;
+}
+
+.different-filters{
+    display: block;
+    white-space: nowrap;
+
+}
+
+.rounded-filters {
+    /*max-height: 4%;
+    min-height: 2%;*/
+    width: 300px;
+    height: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    border: 1px solid, 1px solid, 1px solid, 0;
+    border-radius: 30px;
+    font-size: x-large;
+}
+
+.justify {
+    /*comment ne pas faire aller le texte à la ligne?*/
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.blue {
+    color: #0065fc;
+}
+
+#informations {
+    max-height: 4%;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-style: ridge;
+}
+
+
+#informations-icone{
+
+}
+
+#information-texte{
+    font-weight: normal;
+}
+
+/*Main*/
+
+.main {
+    width: 100%;
+    height: 30%;
+
+}
+
+#central-section {
+    max-width: 100%;
+    max-height: 37%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#left-center{
+    width: 66.6%;
+    height: 1100px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+
+.photo-left-center {
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 40px;
+    box-shadow: 8px 8px 8px grey;
+    padding: 46px 22px 14px 0px;
+    border-top: 2px solid transparent;
+}
+
+.fig-width {
+    width: 33%;
+    height: 35%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.half-third {
+    width: 100%;
+    height: 15%;
+}
+
+.hebergementsamarseille {
+    width: 240px;
+    height: 200px;
+}
+
+.photo-aside {
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 40px;
+    box-shadow: 8px 8px 8px grey;
+    padding: 46px 22px 14px 0px;
+    border-top: 2px solid transparent;
+}
+
+aside {
+    width: 33.3%;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: silver;
+    align-items: stretch;
+}
+
+.aside-card {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+}
+
+.aside-card-a {
+    padding: 46px 22px 14px 0px;
+    border-top: 2px solid transparent;
+}
+
+.aside-card-txt {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: right;
+}
+
+/**/
+
+.fas.fa-star.blue-star {
+    display: inline-block;
+    width:  30px;
+    height: 30px;
+    color: #0065fc;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: white;
+}
+
+.fas.fa-star.grey-star {
+    display: inline-block;
+    width:  30px;
+    height: 30px;
+    color: grey;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: white;
+}
+
+/* Remaining Alphabetic Semantic tags */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+button:hover{
+
+}
+
+image {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
+
+li {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+	list-style-type: none;
+}
+
+ol {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+	list-style-type: none;
+}
+
+p::first-letter{
+    font-style: italic;
+}
+
+section {
+    width: 1400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    border-style: ridge;
+}
+
+ul {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+	list-style-type: none;
+}
+
+.test div > p + div{
+    -moz-text-decoration-style: dotted;
+}
+
+.googlemap{
+    content: "";
+    display: inline-block;
+    width:  30px;
+    height: 30px;
+    color: #0065fc;
+    background:       url(Ressources+Booki+FR/images/icon/resize_icon_location.png);
+    background-image: url(Ressources+Booki+FR/images/icon/resize_icon_location.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: silver;
+}
+
+.fas.fa-map-marker-alt{
+    width: 63.5px;
+    height: 63.5px;
+    text-align-last: center;
+    font-weight: 900;
+    color: black;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: gray;
+    line-height: 4;/*règle CSS qui ne veut pas s'appliquer*/
+}
+
+
+.pictures-before-footer {
+    display:block
+
+}
+
+.main-container {
+    width: 100%; /* or use 1400px*/
+    /*max-height: 800px; why define height? */
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: auto;
+    border-style: ridge;
+}
+
+/* Down block */
+
+#down-block-pictures {
+    max-width: 1400px;
+    max-height: 32%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.photo-block-down {
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 40px;
+    box-shadow: 8px 8px 8px grey;
+    padding: 46px 22px 14px 0px;
+    border-top: 2px solid transparent;
+}
+
+.border {
+    border-radius: 0px 30px 30px 0px;
+}
+
+#form-container a {
+
+}
+@viewport {
+    width: device-width;
+    zoom: 1;
+ }
+
+@media screen and (max-width: 767px) {
+    /*Règles mobiles*/
+    body {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /*Règles tablettes*/
+    body {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    /*Règles desktop*/
+    body {
+        width: auto;
+    }
+}
