@@ -376,6 +376,7 @@ input[type="checkbox"]:checked{
 .hebergementsamarseille {
     width: 240px;
     height: 200px;
+    object-fit: cover;
 }
 
 .photo-aside {
@@ -600,6 +601,7 @@ ul {
     box-shadow: 8px 8px 8px grey;
     padding: 46px 22px 14px 0px;
     border-top: 2px solid transparent;
+    object-fit: cover;
 }
 
 .border {
