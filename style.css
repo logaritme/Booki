@@ -15,7 +15,7 @@ html {
     padding: 0;
 	font-size: 100%;
     font-family: 'Raleway', Arial , "Arial Black" , Courier New, Helvetica, sans-serif;
-    border-style: ridge;
+    /*border-style: ridge;*/
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -38,12 +38,16 @@ article, details, hgroup, menu {
 }
 
 aside {
+    width: 100%;
+    max-width: 1440px;
     margin: 0;
 	padding: 0;
     display: block;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    margin: 2%;
+    border-radius: 17px 17px 17px 17px;
 }
 
 b {
@@ -65,7 +69,9 @@ q:before, q:after {
 }
 
 body{
-    max-width: 1420px;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
 	line-height: 1;
     display:flex;
     background-color: grey/* Temporarly grey for my eyes #F2F2F2*/;
@@ -77,19 +83,20 @@ button {
     background-color:#0065fc;
 }
 
-div, section {
+div, section, header {
     /* display: flex; */
     text-decoration: none;
 }
 
 footer {
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1440px;
     max-height: 10%;
     margin: 0;
 	padding: 0;
     display: flex;
     flex-direction: row;
-    align-items: bottom;
+    align-items: end;
 }
 
 
@@ -109,33 +116,35 @@ form, input {
 
 h1 {
     padding: 10px;
-    */border-style: ridge;*/
+    /*border-style: ridge;*/
     font-weight: 900;
 }
 
 h2 {
     padding: 10px;
-    border-style: ridge;
+    /*border-style: ridge;*/
     font-weight: 900;
 }
 
 h3 {
     padding: 10px;
-    border-style: ridge;
+    /*border-style: ridge;*/
     font-weight: 900;
 }
 
-figure {
+article {
     margin: 0;
 	padding: 0;
     display: flex;
-    justify-content: space-between;
+    
     align-items: flex-end;
     /* flex-direction: column; */
     background-color: white;
 }
 
 header {
+    width: 100%;
+    max-width: 1440px;
     margin: 0;
 	padding: 0;
     display: flex;
@@ -145,24 +154,23 @@ header {
 
 /*1st header*/
 
-#logo-links {
+.logo-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
+    max-height: 80px;
     /* align-items: baseline; */
 }
 
 /* Logo Booki */
 
-#logo-size {
-    /*width:81%;*/
-  }
-#logo {
+.logo {
     float: left;
-    flex-grow: 10%;
+    flex-grow: 1;
     flex-basis: auto;
+    width: 45%;
 }
 
 /* Liens */
@@ -188,7 +196,7 @@ nav ul li {
     border-style: none;
 }
 
-#ul-links {
+.ul-links {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -197,7 +205,7 @@ nav ul li {
     align-content: flex-end;
 }
 
-/*#link {
+/*.link {
     width: auto;
     margin: 15%;
     display: flex;
@@ -214,8 +222,9 @@ nav ul li {
 
 /* 2nd header Text*/
 
-#text-only {
-    width: 800px;
+.text-only {
+    width: 46%;
+    height: 5%;
     padding: 0;
     margin: 0;
     display: flex;
@@ -248,7 +257,7 @@ input[type="checkbox"]:checked{
 
 /*4th header Filters and Informations*/
 
-#filters {
+.filters {
     /*max-height: 4%;
     min-height: 2%;*/
     width: 68%;
@@ -260,7 +269,7 @@ input[type="checkbox"]:checked{
     justify-content: space-around;
 }
 
-#real-filters {
+.real-filters {
     width: 220px;
     height: 100%;
     /*display: flex;
@@ -281,14 +290,16 @@ input[type="checkbox"]:checked{
     /*max-height: 4%;
     min-height: 2%;*/
     width: 300px;
-    height: 75%;
+    height: 50px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: baseline;
-    border: 1px solid, 1px solid, 1px solid, 0;
+    border: 3px solid;
+    border-color: grey;
     border-radius: 30px;
     font-size: x-large;
+    cursor: pointer;
 }
 
 .justify {
@@ -301,21 +312,16 @@ input[type="checkbox"]:checked{
     color: #0065fc;
 }
 
-#informations {
+.informations {
     max-height: 4%;
     align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    border-style: ridge;
+    /*border-style: ridge;*/
 }
 
-
-#informations-icone{
-
-}
-
-#information-texte{
+.information-texte{
     font-weight: normal;
 }
 
@@ -324,27 +330,31 @@ input[type="checkbox"]:checked{
 .main {
     width: 100%;
     height: 30%;
-
 }
 
-#central-section {
+.central-section {
     max-width: 100%;
-    max-height: 37%;
+    max-height: 700px;
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
     flex-direction: row;
+    background-color: rgb(255, 255, 255);
 }
 
-#left-center{
-    width: 66.6%;
-    height: 1100px;
+.left-center{
+    width: 65%;
+    height: 600px;
     align-items: stretch;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    background-color: silver;
+    margin: 1%;
+    border-radius: 17px 17px 17px 17px;;
+    overflow: hidden;
+    ;
 }
-
 
 .photo-left-center {
     /* width: 100%; */
@@ -354,29 +364,63 @@ input[type="checkbox"]:checked{
     border-bottom  : 10px white;
     border-left  : 10px white;
     border-right  : 10px white;
-    border-radius: 40px;
-    box-shadow: 8px 8px 8px grey;
-    padding: 46px 22px 14px 0px;
+    border-radius: 17px 17px 0 0;
     border-top: 2px solid transparent;
+    background-color: white;
+    background-size: 300px;
 }
 
 .fig-width {
-    width: 33%;
-    height: 35%;
+    height: inherit;
+    width: 28%;
+    height: 20%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 1vw;
+    box-shadow: 8px 8px 8px grey;
+    border-radius: 17px 17px 17px 17px;
+    border: 3px solid white;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 2.5%;
 }
 
 .half-third {
     width: 100%;
-    height: 15%;
+    height: 0.5%;
+    background-color: silver;
 }
 
-.hebergementsamarseille {
-    width: 240px;
-    height: 200px;
+.cont-img {
+    width: 100%;
+    height: 54%;
+}
+.heb-marseille-img {
+    /*background-size: 100%;*/
+    display: block;
+    width: 100%;
+    height: 146px;
     object-fit: cover;
+    object-position: center;
+    /*background-size: 300px;*/
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 17px 17px 0px 0px;
+    border-top: 2px solid transparent;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.left-border-radius {
+    border-radius: 17px 17px 0px 0px;
+}
+
+.aside-border-radius {
+    border-radius: 17px 0px 0px 17px;
 }
 
 .photo-aside {
@@ -387,12 +431,35 @@ input[type="checkbox"]:checked{
     border-bottom  : 10px white;
     border-left  : 10px white;
     border-right  : 10px white;
-    border-radius: 40px;
+    border-radius: 17px 0px 0px 17px; /*40px;*/
     box-shadow: 8px 8px 8px grey;
     padding: 46px 22px 14px 0px;
-    border-top: 2px solid transparent;
+    /*border-top: 2px solid transparent;*/
+    background-size: 300px;
 }
 
+.cont-img-aside {
+    width: 40%;
+    height: 100%;
+}
+
+.lespluspop-img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    /*utiliser 100 vh pour s'en sortir, 100vh = 100% mais en mieux*/
+    object-fit: cover;
+    object-position: center;
+    /*background-size: 100%;*/
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-top: 2px solid transparent;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 17px 0px 0px 17px;
+}
 aside {
     width: 33.3%;
     display: flex;
@@ -404,10 +471,18 @@ aside {
 }
 
 .aside-card {
+    width: 100%;
+    max-width: 1440px;
     align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 6px 4px 4px;
+    border-radius: 14px 14px 14px 14px;
+
 }
 
 .aside-card-a {
@@ -416,11 +491,13 @@ aside {
 }
 
 .aside-card-txt {
+
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
     justify-content: right;
+    border-radius: 0px 14px 14px 0px;
 }
 
 /**/
@@ -433,8 +510,7 @@ aside {
     background-position-x: center;
     background-position-y: center;
     background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -449,8 +525,7 @@ aside {
     background-position-x: center;
     background-position-y: center;
     background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -458,11 +533,6 @@ aside {
 }
 
 /* Remaining Alphabetic Semantic tags */
-
-body {
-    width: 100%;
-    height: 100%;
-}
 
 button:hover{
 
@@ -498,7 +568,8 @@ p::first-letter{
 }
 
 section {
-    width: 1400px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -506,7 +577,7 @@ section {
 }
 
 span {
-    border-style: ridge;
+    /*border-style: ridge;*/
 }
 
 ul {
@@ -533,8 +604,7 @@ ul {
     background-position-x: center;
     background-position-y: center;
     background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -550,8 +620,7 @@ ul {
     background-position-x: center;
     background-position-y: center;
     background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -559,40 +628,105 @@ ul {
     line-height: 4;/*règle CSS qui ne veut pas s'appliquer*/
 }
 
-
-.pictures-before-footer {
-    display:block
-
-}
-
 .main-container {
-    width: 100%; /* or use 1400px*/
-    /*max-height: 800px; why define height? */
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin: auto;
-    border-style: ridge;
 }
 
-/* Down block */
+/* Block activities*/
 
-#down-block-pictures {
-    max-width: 1400px;
-    max-height: 32%;
+.activities {
     display: flex;
+    width: 100%;
+    max-width: 1440px;
+    max-height: 33%;
     align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
-    
+    overflow: hidden;
+    border-style: ridge;
+}
+
+.title-activities {
+    font-size: 1.4vh;
+    border-style: ridge;
+}
+
+.down-block-pictures {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    max-height: 32%;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    gap: 3vw;
+    border-style: ridge;
+}
+
+.column-in-row {
+    display: flex;
+    flex-direction: column;
+    border-style: ridge;
+}
+
+.row {
+    flex-direction: row;
+    border-style: ridge;
+}
+
+.column {
+    flex-direction: column;
+    border-style: ridge;
+}
+
+.alone-in-row {
+    /*background-size: 100%;*/
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    /*background-size: 300px;*/
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 17px 17px 0px 0px;
+    border-top: 2px solid transparent;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.twin-in-row {
+    /*background-size: 100%;*/
+    display: block;
+    width: 100%;
+    height: 146px;
+    object-fit: cover;
+    object-position: center;
+    /*background-size: 300px;*/
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 17px 17px 0px 0px;
+    border-top: 2px solid transparent;
+    background-color: white;
+    border: 3px solid white;
 }
 /*Name somes cards... border: white; overflow: hidden;  ?? */
 .photo-block-down {
     /* width: 100%; */
     /* height: 100%; */
-    display: block;
     border-top  : 10px white;
     border-bottom  : 10px white;
     border-left  : 10px white;
@@ -608,13 +742,15 @@ ul {
     border-radius: 0px 30px 30px 0px;
 }
 
+.border-one {
+    outline: none;
+}
+
 #form-container a {
 
 }
-@viewport {
-    width: device-width;
-    zoom: 1;
- }
+
+/* Il me faut un @viewport dans mon CSS */
 
 @media screen and (max-width: 767px) {
     /*Règles mobiles*/
