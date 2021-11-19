@@ -5,10 +5,6 @@
 *::after {
     box-sizing: inherit;
 }
-  
-html {
-    box-sizing: border-box;
-}
 
 * {
     margin: 0;
@@ -29,7 +25,15 @@ a:active {
     color: coral;
 }
 
+article {
+    display: flex;
+    align-items: flex-end;
+    /* flex-direction: column; */
+    background-color: white;
+}
+
 article, details, hgroup, menu {
+    display: flex;
     margin: 0;
 	padding: 0;
 	display: block;
@@ -40,13 +44,14 @@ article, details, hgroup, menu {
 aside {
     width: 100%;
     max-width: 1440px;
-    margin: 0;
 	padding: 0;
     display: block;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 2%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
     border-radius: 17px 17px 17px 17px;
 }
 
@@ -70,7 +75,6 @@ q:before, q:after {
 
 body{
     width: 100%;
-    height: 100%;
     max-width: 1440px;
 	line-height: 1;
     display:flex;
@@ -91,7 +95,6 @@ div, section, header {
 footer {
     width: 100%;
     max-width: 1440px;
-    max-height: 10%;
     margin: 0;
 	padding: 0;
     display: flex;
@@ -115,31 +118,19 @@ form, input {
 
 
 h1 {
-    padding: 10px;
+    font-weight: bold;
     /*border-style: ridge;*/
-    font-weight: 900;
 }
-
+/* Conflit h2 et text-only */
 h2 {
-    padding: 10px;
+    font-weight: bold;
     /*border-style: ridge;*/
-    font-weight: 900;
 }
 
 h3 {
-    padding: 10px;
+    font-weight: bold;
     /*border-style: ridge;*/
-    font-weight: 900;
-}
 
-article {
-    margin: 0;
-	padding: 0;
-    display: flex;
-    
-    align-items: flex-end;
-    /* flex-direction: column; */
-    background-color: white;
 }
 
 header {
@@ -160,7 +151,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
-    max-height: 80px;
+    background-color: cadetblue;
     /* align-items: baseline; */
 }
 
@@ -221,23 +212,51 @@ nav ul li {
 }
 
 /* 2nd header Text*/
-
+/* conflit h1 */
 .text-only {
-    width: 46%;
-    height: 5%;
+    width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: stretch; 
+    align-items: stretch;
+    background-color: coral;
+}
+h1 {
+    font-weight: 900;
+    padding: 10px;
+    font-size: 155%;
+    /*border-style: ridge;*/
 }
 
-/*3rd header Form*/
+h2 {
+    font-weight: normal;
+    padding: 10px;
+    font-size: 100%;
+    /*border-style: ridge;*/
+}
+/* Icone before input */
+
+.fas.fa-map-marker-alt{
+    width: 63.5px;
+    height: 63.5px;
+    text-align-last: center;
+    font-weight: 900;
+    color: black;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: gray;
+    line-height: 4;/*règle CSS qui ne veut pas s'appliquer*/
+}
+
 
 #form {
-    max-height: 4%;
-    min-height: 2%;
     align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
@@ -261,12 +280,14 @@ input[type="checkbox"]:checked{
     /*max-height: 4%;
     min-height: 2%;*/
     width: 68%;
-    height: 90px;
     align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
+    background-color: darkorchid;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .real-filters {
@@ -318,13 +339,14 @@ input[type="checkbox"]:checked{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
     /*border-style: ridge;*/
 }
 
-.information-texte{
-    font-weight: normal;
+.line-height {
+    line-height: 0;
 }
-
 /*Main*/
 
 .main {
@@ -334,26 +356,27 @@ input[type="checkbox"]:checked{
 
 .central-section {
     max-width: 100%;
-    max-height: 700px;
+    max-height: 650px;
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
+    
 }
 
 .left-center{
     width: 65%;
     height: 600px;
-    align-items: stretch;
     display: flex;
+    align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: silver;
-    margin: 1%;
     border-radius: 17px 17px 17px 17px;;
     overflow: hidden;
-    ;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 
 .photo-left-center {
@@ -371,9 +394,9 @@ input[type="checkbox"]:checked{
 }
 
 .fig-width {
-    height: inherit;
-    width: 28%;
-    height: 20%;
+    max-width: 245px;
+    width: 100%;
+    height: 30vh;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -385,23 +408,30 @@ input[type="checkbox"]:checked{
     box-sizing: border-box;
     background-color: white;
     margin: 2.5%;
+    overflow: hidden;
 }
 
-.half-third {
+.fig-cap-bottom {
+    max-width: 254px;
+    width:100%;
+    height: 146px;
+
+}
+
+.sixth {
     width: 100%;
-    height: 0.5%;
     background-color: silver;
+    border-style: ridge;
 }
 
 .cont-img {
     width: 100%;
-    height: 54%;
+    overflow: hidden;
 }
 .heb-marseille-img {
     /*background-size: 100%;*/
     display: block;
     width: 100%;
-    height: 146px;
     object-fit: cover;
     object-position: center;
     /*background-size: 300px;*/
@@ -418,89 +448,6 @@ input[type="checkbox"]:checked{
 .left-border-radius {
     border-radius: 17px 17px 0px 0px;
 }
-
-.aside-border-radius {
-    border-radius: 17px 0px 0px 17px;
-}
-
-.photo-aside {
-    /* width: 100%; */
-    /* height: 100%; */
-    display: block;
-    border-top  : 10px white;
-    border-bottom  : 10px white;
-    border-left  : 10px white;
-    border-right  : 10px white;
-    border-radius: 17px 0px 0px 17px; /*40px;*/
-    box-shadow: 8px 8px 8px grey;
-    padding: 46px 22px 14px 0px;
-    /*border-top: 2px solid transparent;*/
-    background-size: 300px;
-}
-
-.cont-img-aside {
-    width: 40%;
-    height: 100%;
-}
-
-.lespluspop-img {
-    display: block;
-    width: 100%;
-    height: 180px;
-    /*utiliser 100 vh pour s'en sortir, 100vh = 100% mais en mieux*/
-    object-fit: cover;
-    object-position: center;
-    /*background-size: 100%;*/
-    border-top  : 10px white;
-    border-bottom  : 10px white;
-    border-left  : 10px white;
-    border-right  : 10px white;
-    border-top: 2px solid transparent;
-    background-color: white;
-    border: 3px solid white;
-    border-radius: 17px 0px 0px 17px;
-}
-aside {
-    width: 33.3%;
-    display: flex;
-    align-content: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    background-color: silver;
-    align-items: stretch;
-}
-
-.aside-card {
-    width: 100%;
-    max-width: 1440px;
-    align-items: stretch;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row; 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    box-shadow: rgba(0, 0, 0, 0.3) 6px 4px 4px;
-    border-radius: 14px 14px 14px 14px;
-
-}
-
-.aside-card-a {
-    padding: 46px 22px 14px 0px;
-    border-top: 2px solid transparent;
-}
-
-.aside-card-txt {
-
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: right;
-    border-radius: 0px 14px 14px 0px;
-}
-
-/**/
 
 .fas.fa-star.blue-star {
     display: inline-block;
@@ -530,6 +477,120 @@ aside {
     background-origin: initial;
     background-clip: initial;
     background-color: white;
+}
+
+.aside-border-radius {
+    border-radius: 17px 0px 0px 17px;
+}
+
+.photo-aside {
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+    border-top  : 10px white;
+    border-bottom  : 10px white;
+    border-left  : 10px white;
+    border-right  : 10px white;
+    border-radius: 17px 0px 0px 17px; /*40px;*/
+    box-shadow: 8px 8px 8px grey;
+    padding: 46px 22px 14px 0px;
+    /*border-top: 2px solid transparent;*/
+    background-size: 300px;
+}
+
+.cont-img-aside {
+    width: 40%;
+    height: 20vh;
+}
+
+.les-plus-pop-top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-style: ridge;
+}
+
+.top-h {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-style: ridge;
+}
+
+.fas.fa-chart-line {
+    display: inline-block;
+    width:  30px;
+    height: 30px;
+    color: black;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: silver;
+}
+
+.top-span {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    border-style: ridge;
+}
+
+.les-plus-pop-img {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 17px 0px 0px 17px;
+}
+aside {
+    width: 33.3%;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: silver;
+    align-items: stretch;
+}
+
+.aside-card {
+    width: 80%;
+    max-width: 1440px;
+    height: 20vh;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    margin-left: 2.65vw;
+    margin-right: 2.65vw;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 6px 4px 4px;
+    border-radius: 14px 14px 14px 14px;
+
+}
+
+.aside-card-a {
+    padding: 46px 22px 14px 0px;
+    border-top: 2px solid transparent;
+}
+
+.aside-card-txt {
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: right;
+    border-radius: 0px 14px 14px 0px;
 }
 
 /* Remaining Alphabetic Semantic tags */
@@ -611,23 +672,6 @@ ul {
     background-color: silver;
 }
 
-.fas.fa-map-marker-alt{
-    width: 63.5px;
-    height: 63.5px;
-    text-align-last: center;
-    font-weight: 900;
-    color: black;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: initial;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: gray;
-    line-height: 4;/*règle CSS qui ne veut pas s'appliquer*/
-}
-
 .main-container {
     width: 100%;
     height: 100%;
@@ -655,10 +699,10 @@ ul {
 
 .title-activities {
     font-size: 1.4vh;
-    border-style: ridge;
+    /* border-style: ridge; */
 }
 
-.down-block-pictures {
+.down-block-cards {
     display: flex;
     width: 100%;
     max-width: 1440px;
@@ -733,7 +777,7 @@ ul {
     border-right  : 10px white;
     border-radius: 40px;
     box-shadow: 8px 8px 8px grey;
-    padding: 46px 22px 14px 0px;
+    /* padding: 46px 22px 14px 0px; */
     border-top: 2px solid transparent;
     object-fit: cover;
 }
