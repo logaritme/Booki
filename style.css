@@ -76,7 +76,6 @@ button {
 }
 
 div, section, header {
-    /* display: flex; */
     text-decoration: none;
 }
 
@@ -105,22 +104,6 @@ form, input {
 }
 
 
-h1 {
-    font-weight: bold;
-    /*border-style: ridge;*/
-}
-/* Conflit h2 et text-only */
-h2 {
-    font-weight: bold;
-    /*border-style: ridge;*/
-}
-
-h3 {
-    font-weight: bold;
-    /*border-style: ridge;*/
-
-}
-
 header {
     width: 100%;
     max-width: 1440px;
@@ -134,12 +117,16 @@ header {
 /*1st header*/
 
 .logo-links {
+    max-width: 1440px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+
     background-color: white;
+    margin-top: 2.2%;
+    margin-bottom: 0.66%;
     /* align-items: baseline; */
 }
 
@@ -212,16 +199,18 @@ nav ul li {
     background-color: white;
 }
 h1 {
-    font-weight: 900;
+    font-weight: 155%;
+    font-size: 700;
+    
+    margin-bottom: -0.31em;
     padding: 10px;
-    font-size: 155%;
     /*border-style: ridge;*/
 }
 
 h2 {
-    font-weight: normal;
     padding: 10px;
     font-size: 100%;
+    margin-bottom: 0.3em;
     /*border-style: ridge;*/
 }
 
@@ -287,6 +276,7 @@ h2 {
 
 .flex-a {
     display: flex;
+    cursor: pointer;
 }
 
 input[type="submit"] {
@@ -311,77 +301,186 @@ input[type="submit"] {
     border-color: #0065fc;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
+    cursor: pointer;
     /* border-style: ridge; */
 }
 
-/*4th header Filters and Informations*/
+/* Filters and Informations*/
+
+.flex-filters {
+
+    display: flex;
+    /* border-style: ridge; */
+}
 
 .filters {
     /*max-height: 4%;
     min-height: 2%;*/
-    width: 68%;
-    align-items: stretch;
+    width: 74%;
+
     display: flex;
+    align-items: stretch;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: white;
+
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 10px;
+    gap: 1%;
+    /* border-style: ridge; */
 }
 
 .real-filters {
-    width: 220px;
+    width: 7.86%;
     height: 100%;
-    /*display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: stretch;*/
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
     align-items: baseline;
     font-size: x-large;
+    line-height: 2;
+}
+
+#percent-first {
+    width: 21.73%;
+}
+
+#percent-second {
+    width: 17.06%;
+}
+
+#percent-third {
+    width: 20.21%;
+}
+
+#percent-forth {
+    width: 24.82%;
 }
 
 .different-filters{
-    display: block;
+    display: flex;
+    align-content: center;
     white-space: nowrap;
 
+    font-weight: bold;
+    line-height: 1.8;
+    z-index: 1;
+}
+
+.fas.fa-money-bill-wave {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    color : #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+
+    margin-left: -17px;
+    line-height: 2;
+    z-index: 2;
+}
+
+.fas.fa-child {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    color : #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    
+    margin-left: -18px;
+    line-height: 2;
+    z-index: 2;
+}
+
+.fas.fa-heart {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    color : #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    
+    margin-left: -13px;
+    line-height: 2;
+    z-index: 2;
+}
+
+.fas.fa-dog {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    color : #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    
+    margin-left: -7px;
+    line-height: 2;
+    z-index: 2;
 }
 
 .rounded-filters {
     /*max-height: 4%;
     min-height: 2%;*/
-    width: 300px;
     height: 50px;
+
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-around;
+
+    background-color: white;
     border: 3px solid;
-    border-color: grey;
+    border-color: #F2F2F2;
     border-radius: 30px;
     font-size: x-large;
+
+    /* gap: 2%; */
     cursor: pointer;
 }
 
 .justify {
-    /*comment ne pas faire aller le texte à la ligne?*/
     display: flex;
     flex-wrap: nowrap;
 }
 
-.blue {
-    color: #0065fc;
-}
+/* Informations */
 
 .informations {
     max-height: 4%;
-    align-items: stretch;
+
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    align-items: stretch;
+    flex-flow: row nowrap;
+
+    background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    /*border-style: ridge;*/
+    /* border-style: ridge; */
+}
+
+
+.fas.fa-info-circle {
+    color: #0065fc;
+
+    margin-left: 5px;
 }
 
 .line-height {
@@ -407,15 +506,15 @@ input[type="submit"] {
 
 .left-center{
     width: 65%;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: silver;
+    background-color: #F2F2F2;
     border-radius: 17px 17px 17px 17px;;
     overflow: hidden;
-    margin-top: 3%;
+    margin-top: 0;
     margin-left: 3%;
 }
 
@@ -460,8 +559,23 @@ input[type="submit"] {
 
 .sixth {
     width: 100%;
-    background-color: silver;
+    background-color: #F2F2F2;
+    margin-left: 2vw;
     /* border-style: ridge; */
+}
+
+.medium-text {
+    margin-top: 25px;
+    margin-left: -1%;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+#little-text {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 25px;
 }
 
 .cont-img {
@@ -559,11 +673,13 @@ input[type="submit"] {
     height: 100%;
     display: flex;
     justify-content: flex-end;
+
+    margin-top: 7px;
     /* border-style: ridge; */
 }
 
 .fas.fa-chart-line {
-    display: inline-block;
+    align-self: center;
     width:  30px;
     height: 30px;
     color: black;
@@ -574,7 +690,7 @@ input[type="submit"] {
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: silver;
+    background-color: #F2F2F2;
 }
 
 .top-span {
@@ -605,11 +721,11 @@ aside {
     flex-direction: column;
     justify-content: flex-end;
     padding: 0;
-    margin-top: 3%;
+    margin-top: 0;
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 17px 17px 17px 17px;
-    background-color: silver;
+    background-color: #F2F2F2;
     /* border-style: ridge; */
 
 }
@@ -762,6 +878,8 @@ ul {
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    margin-left: 3%;
+    margin-right: 3%;
     border-style: ridge;
 }
 

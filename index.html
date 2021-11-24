@@ -53,42 +53,44 @@
                 </form>
             </div>
         </section>
-        <section>
+        <section class="flex-filters">
             <div class="filters">
                 <div class="real-filters">
                     <h3>Filtres</h3>
                 </div>
 
-                <button class="rounded-filters">
+                <button class="rounded-filters" id="percent-first">
+                    <!-- <div class="circle"> -->
                     <span class="fas fa-money-bill-wave blue"></span>
-                    <span class="different-filters">Economique</span>
+                    <!-- </div> -->
+                    <span class="different-filters">Économique</span>
                 </button>
 
-                <button class="rounded-filters">
+                <button class="rounded-filters" id="percent-second">
                     <span class="fas fa-child blue"></span>
                     <span class="different-filters">Familial</span>
                 </button>
 
-                <button class="rounded-filters">
+                <button class="rounded-filters" id="percent-third">
                     <span class="fas fa-heart blue"></span>
                     <span class="different-filters">Romantique</span>
                 </button>
 
-                <button class="rounded-filters">
+                <button class="rounded-filters" id="percent-forth">
                     <span class="fas fa-dog blue"></span>
                     <span class="different-filters">Animaux autorisés</span>
                 </button>
             </div>
         </section>
         <div class="informations">
-            <span class="fas fa-info-circle blue fa-lg"></span>
-            <h2 class="line-height">Plus de 500 logements sont disponibles dans cette ville</h2>
+            <span class="fas fa-info-circle fa-lg"></span>
+            <h2 class="line-height">Plus de 500 logements sont disponibles dans cette ville<h2>
         </div>
         <main>
             <section class="central-section">
                 <div class="left-center">
                     <div class="sixth">
-                        <h2>Hébergements à Marseille</h2>
+                        <h3 class="medium-text">Hébergements à Marseille</h3>
                     </div>
                     <div class="fig-width">
                         <!-- <div class="cont-img"> -->
@@ -236,12 +238,12 @@
                         </a>
                     </div>
                     <div class="sixth">
-                        <h3>Afficher plus</h3>
+                        <h3 id="little-text" >Afficher plus</h3>
                     </div>
                 </div>
                 <aside>
                     <div class="les-plus-pop-top">
-                        <h2 class="top-h">Les plus populaires</h2>
+                        <h2 class="medium-text top-h">Les plus populaires</h2>
                         <div class="set-chart-line">
                             <span class="fas fa-chart-line fa-2x top-span"></span>
                         </div>
@@ -324,6 +326,7 @@
             <div class="activities">
                 <h2 class="title-activities">Activités à Marseille</h2>
                 <div class="activities-block-cards">
+                    <!-- intégrer figure et figcaption dans le a cursor:pointer; -->
                     <figure class="row">
                         <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c11.jpg"><img
                                 class="alone-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c1.jpg"
