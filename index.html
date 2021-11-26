@@ -46,9 +46,10 @@
                     </div>
                     <input type="search" class="border-one" id="site-search" name="q" maxlength="40"
                         placeholder="Marseille,France" aria-label="Search through site content">
-                    <a class="flex-a" href="https://www.google.fr/maps/place/Marseille/@43.2805098,5.2405644,11z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf4344da5333:0x40819a5fd970220!8m2!3d43.296482!4d5.36978"
+                    <a class="flex-a"
+                        href="https://www.google.fr/maps/place/Marseille/@43.2805098,5.2405644,11z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf4344da5333:0x40819a5fd970220!8m2!3d43.296482!4d5.36978"
                         target="_blank">
-                        <input class="border-two" id="search-click" type="submit" value="Rechercher" >
+                        <input class="border-two" id="search-click" type="submit" value="Rechercher">
                     </a>
                 </form>
             </div>
@@ -238,7 +239,7 @@
                         </a>
                     </div>
                     <div class="sixth">
-                        <h3 id="little-text" >Afficher plus</h3>
+                        <h3 id="little-text">Afficher plus</h3>
                     </div>
                 </div>
                 <aside>
@@ -326,54 +327,84 @@
             <div class="activities">
                 <h2 class="title-activities">Activités à Marseille</h2>
                 <div class="activities-block-cards">
-                    <!-- intégrer figure et figcaption dans le a cursor:pointer; -->
-                    <figure class="row">
-                        <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c11.jpg"><img
-                                class="alone-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c1.jpg"
-                                alt="Vue du port" title="Cliquer ici pour agrandir"></a>
-                        <h3><b>Vieux Port</b></h3>
-                    </figure>
-                    <div class="column-in-row">
-                        <figure class="column">
-                            <a class="photo-block-down"
-                                href="./Ressources+Booki+FR/images/activites/1_xlarge/c22.jpg"><img class="twin-in-row"
-                                    src="./Ressources+Booki+FR/images/activites/4_small/c2.jpg"
-                                    alt="Fort de Pomègues au milieu des rochers" title="Cliquer ici pour agrandir"></a>
-                            <h3><b>Fort de Pomègues</b></h3>
-                        </figure>
-                        <figure class="column">
-                            <a class="photo-block-down"
-                                href="./Ressources+Booki+FR/images/activites/1_xlarge/c33.jpg"><img class="twin-in-row"
-                                    src="./Ressources+Booki+FR/images/activites/4_small/c3.jpg"
-                                    alt="Iles du Frioul vu de la côte" title="Cliquer ici pour agrandir"></a>
-                            <h3><b>Iles du Frioul</b></h3>
-                        </figure>
+                    <div class="row">
+                        <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c11.jpg">
+                            <figure>
+                                <div class="big-pic">
+                                <img class="alone-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c1_9_6.jpg"
+                                    alt="Vue du port" title="Cliquer ici pour agrandir">
+                                </div>
+                                <figcaption class="fig-size-cont"><b>Vieux Port</b>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </div>
-                    <figure class="row">
-                        <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c44.jpg"><img
-                                class="alone-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c4.jpg"
-                                alt="Vue de la côte entre mer et rochers" title="Cliquer ici pour agrandir"></a>
-                        <h3><b>Parc National des Calanques</b></h3>
-                    </figure>
                     <div class="column-in-row">
-                        <figure class="column">
-                            <a class="photo-block-down"
-                                href="./Ressources+Booki+FR/images/activites/1_xlarge/c55.jpg"><img class="twin-in-row"
-                                    src="./Ressources+Booki+FR/images/activites/4_small/c5.jpg"
-                                    alt="Vue de la cathédrale perchée sur la colline"
-                                    title="Cliquer ici pour agrandir"></a>
-                            <h3><b>Notre-Dame-de-la-Garde</b></h3>
-                        </figure>
-                        <figure class="column">
-                            <a class="photo-block-down"
-                                href="./Ressources+Booki+FR/images/activites/1_xlarge/c66.jpg"><img class="twin-in-row"
-                                    src="./Ressources+Booki+FR/images/activites/4_small/c6.jpg"
-                                    alt="Vue de la grande fontaine dans le parc" title="Cliquer ici pour agrandir"></a>
-                            <h3><b>Parc Longchamp</b></h3>
-                        </figure>
+                        <div class="column">
+                            <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c22.jpg">
+                                <figure>
+                                    <div class="little-pic">
+                                    <img class="twin-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c2_9_6.jpg"
+                                        alt="Fort de Pomègues au milieu des rochers" title="Cliquer ici pour agrandir">
+                                    </div>
+                                    <figcaption class="fig-size-cont"><b>Fort de Pomègues</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c33.jpg">
+                                <figure>
+                                    <div class="little-pic">
+                                    <img class="twin-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c3_9_6.jpg"
+                                        alt="Iles du Frioul vu de la côte" title="Cliquer ici pour agrandir">
+                                    </div>
+                                    <figcaption class="fig-size-cont"><b>Iles du Frioul</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c44.jpg">
+                            <figure>
+                                <div class="big-pic">
+                                <img class="alone-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c4_9_6.jpg"
+                                    alt="Vue de la côte entre mer et rochers" title="Cliquer ici pour agrandir">
+                                </div>
+                                <figcaption class="fig-size-cont"><b>Parc National des Calanques</b>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="column-in-row">
+                        <div class="column">
+                            <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c55.jpg">
+                                <figure>
+                                    <div class="little-pic">
+                                    <img class="twin-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c5_9_6.jpg"
+                                        alt="Vue de la cathédrale perchée sur la colline"
+                                        title="Cliquer ici pour agrandir">
+                                    </div>
+                                    <figcaption class="fig-size-cont"><b>Notre-Dame-de-la-Garde</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a class="photo-block-down" href="./Ressources+Booki+FR/images/activites/1_xlarge/c66.jpg">
+                                <figure>
+                                    <div class="little-pic">
+                                    <img class="twin-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c6_9_6.jpg"
+                                        alt="Vue de la grande fontaine dans le parc" title="Cliquer ici pour agrandir">
+                                    </div>
+                                    <figcaption class="fig-size-cont"><b>Parc Longchamp</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
         </main>

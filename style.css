@@ -302,7 +302,6 @@ input[type="submit"] {
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
     cursor: pointer;
-    /* border-style: ridge; */
 }
 
 /* Filters and Informations*/
@@ -880,7 +879,7 @@ ul {
     overflow: hidden;
     margin-left: 3%;
     margin-right: 3%;
-    border-style: ridge;
+    /* border-style: ridge; */
 }
 
 .title-activities {
@@ -899,30 +898,56 @@ ul {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     gap: 3vw;
-    border-style: ridge;
+    /* border-style: ridge; */
+}
+
+.fig-size-cont {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 7%;
+    /* border-style: ridge; */
+}
+
+.photo-block-down {
+    cursor: pointer;
 }
 
 .column-in-row {
+    width: 21.1%;
+
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    border-style: ridge;
+    /* border-style: ridge; */
 }
 
 .row {
+    width: 21.1%;
+    height: 100%;
     flex-direction: row;
-    border-style: ridge;
+    /* border-style: ridge; */
 }
 
 .column {
     flex-direction: column;
-    border-style: ridge;
+    /* border-style: ridge; */
+}
+
+.big-pic {
+    height: 80%;
+}
+
+.little-pic {
+    height: 40%;
 }
 
 .alone-in-row {
     /*background-size: 100%;*/
     display: block;
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     object-fit: cover;
     object-position: center;
     /*background-size: 300px;*/
@@ -934,26 +959,30 @@ ul {
     border-top: 2px solid transparent;
     background-color: white;
     border: 3px solid white;
+
 }
 
 .twin-in-row {
     /*background-size: 100%;*/
-    display: block;
     width: 100%;
     height: 146px;
+    /* height: 40%; */
+    display: block;
+
     object-fit: cover;
     object-position: center;
     /*background-size: 300px;*/
     border-top  : 10px white;
+    /* border-top: 2px solid transparent; */
     border-bottom  : 10px white;
     border-left  : 10px white;
     border-right  : 10px white;
     border-radius: 17px 17px 0px 0px;
-    border-top: 2px solid transparent;
+
     background-color: white;
     border: 3px solid white;
 }
-/*Name somes cards... border: white; overflow: hidden;  ?? */
+
 .photo-block-down {
     /* width: 100%; */
     /* height: 100%; */
@@ -983,6 +1012,8 @@ ul {
 #form-container a {
 
 }
+
+
 
 /* Il me faut un @viewport dans mon CSS */
 
