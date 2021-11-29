@@ -587,7 +587,7 @@ input[type="submit"] {
     width: 100%;
     overflow: hidden;
 }
-
+/* Resize img lodging by CSS */
 .heb-ratio-img {
     position: relative;
     width: 100%;
@@ -599,22 +599,48 @@ input[type="submit"] {
     padding-top: 50%;
 }
 
-.content-one {
+.heb-content-one {
     float: center;
 }
-
-.aside-heb-ratio-img {
+/* Resize img aside by CSS */
+.aside-ratio-img {
     position: relative;
     height: 100%;
 }
 
-.aside-heb-ratio-img:after {
+.aside-ratio-img:after {
     content: "";
     float: center;
     padding-top: 100%;
 }
 
 .aside-content-one {
+    float: center;
+}
+/* Resize img activities by CSS */
+.act-ratio-portrait-img {
+    position: relative;
+    width: 100%;
+}
+
+.act-ratio-portrait-img:after {
+    content: "";
+    float: center;
+    padding-top: 200%;
+}
+
+.act-ratio-img {
+    position: relative;
+    width: 100%;
+}
+
+.act-ratio-img:after {
+    content: "";
+    float: center;
+    padding-top: 50%;
+}
+
+.act-content-one {
     float: center;
 }
 
@@ -922,6 +948,7 @@ ul {
     overflow: hidden;
     margin-left: 3%;
     margin-right: 3%;
+    margin-bottom: 5%;
     /* border-style: ridge; */
 }
 
@@ -933,45 +960,48 @@ ul {
     /* border-style: ridge; */
 }
 
-.activities-block-cards {
+.act-block-cards {
     display: flex;
     width: 100%;
-    max-width: 1440px;
-    max-height: 32%;
+    height: 450px;
     align-items: stretch;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     gap: 3vw;
+    object-fit: cover;
     /* border-style: ridge; */
 }
 
-.fig-size-cont {
-    height: 5vh;
+.act-shadow {
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 5% 5% 5% 5%;
+}
+
+.figc-size-cont {
     display: flex;
+    height: 5vh;
     flex-direction: row;
     align-items: center;
     margin-left: 7%;
     /* border-style: ridge; */
 }
 
-.photo-block-down {
+.act-pointer {
     cursor: pointer;
 }
 
 .column-in-row {
     width: 21.1%;
-
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    gap: 3vw;
     /* border-style: ridge; */
 }
 
 .row {
     width: 21.1%;
-    height: 100%;
     flex-direction: row;
     /* border-style: ridge; */
 }
@@ -981,66 +1011,66 @@ ul {
     /* border-style: ridge; */
 }
 
-.big-pic {
-    height: 80%;
-}
-
-.little-pic {
-    height: 40%;
-}
-
 .alone-in-row {
-    /*background-size: 100%;*/
     display: block;
     width: 100%;
-    /* height: 250px; */
+    height: 55vh;
     object-fit: cover;
     object-position: center;
-    /*background-size: 300px;*/
-    border-top  : 10px white;
-    border-bottom  : 10px white;
-    border-left  : 10px white;
-    border-right  : 10px white;
+    border: 10px solid white;
     border-radius: 17px 17px 0px 0px;
-    border-top: 2px solid transparent;
     background-color: white;
     border: 3px solid white;
-
+    /* border-style: ridge; */
 }
 
-.twin-in-row {
-    /*background-size: 100%;*/
-    width: 100%;
-    height: 146px;
-    /* height: 40%; */
+#twin-in-row-one {
     display: block;
-
+    width: 100%;
+    height: 29vh;
     object-fit: cover;
     object-position: center;
-    /*background-size: 300px;*/
-    border-top  : 10px white;
-    /* border-top: 2px solid transparent; */
-    border-bottom  : 10px white;
-    border-left  : 10px white;
-    border-right  : 10px white;
+    border: 10px solid white;
     border-radius: 17px 17px 0px 0px;
-
     background-color: white;
     border: 3px solid white;
 }
 
-.photo-block-down {
-    /* width: 100%; */
-    /* height: 100%; */
-    border-top  : 10px white;
-    border-bottom  : 10px white;
-    border-left  : 10px white;
-    border-right  : 10px white;
-    border-radius: 40px;
-    box-shadow: 8px 8px 8px grey;
-    /* padding: 46px 22px 14px 0px; */
-    border-top: 2px solid transparent;
+#twin-in-row-two {
+    display: block;
+    width: 100%;
+    height: 14.5vh;
     object-fit: cover;
+    object-position: center;
+    border: 10px solid white;
+    border-radius: 17px 17px 0px 0px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+#twin-in-row-three {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+    border: 10px solid white;
+    border-radius: 17px 17px 0px 0px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+#twin-in-row-forth {
+    display: block;
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+    object-position: center;
+    border: 10px solid white;
+    border-radius: 17px 17px 0px 0px;
+
+    background-color: white;
+    border: 3px solid white;
 }
 
 .border-one {
