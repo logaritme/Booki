@@ -147,6 +147,7 @@ nav ul li {
     border-style: none;
 }
 
+
 .ul-links {
     width: 100%;
     display: flex;
@@ -156,19 +157,19 @@ nav ul li {
     align-content: flex-end;
 }
 
-/*.link {
-    width: auto;
-    margin: 15%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-}*/
+.link {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.link:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+    margin-top: -2px;
+}
 
 .normal-link {
     font-weight: bold;
-}
-.normal-link:hover {
-    color: turquoise;
 }
 
 /* 2nd header Text*/

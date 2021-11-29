@@ -44,7 +44,7 @@
                     <div class="map-marker-radius">
                         <span class="fas fa-map-marker-alt span-center"></span>
                     </div>
-                    <input type="search" class="border-one" id="site-search" name="query" maxlength="40"
+                    <input type="search" class="border-one" id="site-search" name="q" maxlength="40"
                         value="Marseille,France" aria-label="Search through site content">
                     <a class="flex-a"
                         href="https://www.google.fr/maps/place/Marseille/@43.2805098,5.2405644,11z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf4344da5333:0x40819a5fd970220!8m2!3d43.296482!4d5.36978"
@@ -91,178 +91,187 @@
             <section class="central-section">
                 <div class="left-center">
                     <div class="six-cards-center">
-                    <div class="sixth">
-                        <h3 class="medium-text">Hébergements à Marseille</h3>
-                    </div>
-                    <div class="fig-width">
-                        <!-- <div class="cont-img"> -->
-                        <a class="photo-left-center" href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a11.jpg">
-                            <figure>
-                                <div class="heb-ratio-img">
-                                <div class="heb-content-one">
-                                <img  class="heb-marseille-img"
-                                    src="./Ressources+Booki+FR/images/hebergements/4_small/a1.jpg"
-                                    alt="Chambre avec lits superposés" title="Cliquer ici pour agrandir">
-                                </div>
-                                </div>
-                                <figcaption class=fig-cap-bottom>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color"><b>Auberge La Cannebière</b></h3>
+                        <div class="sixth">
+                            <h3 id="hebergementsamarseille" class="medium-text">Hébergements à Marseille</h3>
+                        </div>
+                        <div class="fig-width">
+                            <!-- <div class="cont-img"> -->
+                            <a class="photo-left-center"
+                                href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a11.jpg">
+                                <figure>
+                                    <div class="heb-ratio-img">
+                                        <div class="heb-content-one">
+                                            <img class="heb-marseille-img"
+                                                src="./Ressources+Booki+FR/images/hebergements/4_small/a1.jpg"
+                                                alt="Chambre avec lits superposés" title="Cliquer ici pour agrandir">
+                                        </div>
                                     </div>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color">Nuit à partir de 25€</h3>
+                                    <figcaption class=fig-cap-bottom>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color"><b>Auberge La Cannebière</b></h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color">Nuit à partir de 25€</h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star grey-star"></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="fig-width">
+                            <a class="photo-left-center"
+                                href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a22.jpg">
+                                <figure>
+                                    <div class="heb-ratio-img">
+                                        <div class="heb-content-one">
+                                            <img class="heb-marseille-img"
+                                                src="./Ressources+Booki+FR/images/hebergements/4_small/a2.jpg"
+                                                alt="Chambre avec 2 lits lumineuse" title="Cliquer ici pour agrandir">
+                                        </div>
                                     </div>
-                                    <div class="left-border-radius">
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star grey-star"></span>
+                                    <figcaption class=fig-cap-bottom>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color"><b>Hôtel du port</b></h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color">Nuit à partir de 52€</h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="fig-width">
+                            <a class="photo-left-center"
+                                href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a33.jpg">
+                                <figure>
+                                    <div class="heb-ratio-img">
+                                        <div class="heb-content-one">
+                                            <img class="heb-marseille-img"
+                                                src="./Ressources+Booki+FR/images/hebergements/4_small/a3.jpg"
+                                                alt="Chambre avec armoire et lampe de chevet"
+                                                title="Cliquer ici pour agrandir">
+                                        </div>
                                     </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="fig-width">
-                        <a class="photo-left-center" href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a22.jpg">
-                            <figure>
-                                <div class="heb-ratio-img">
-                                <div class="heb-content-one">
-                                <img class="heb-marseille-img"
-                                    src="./Ressources+Booki+FR/images/hebergements/4_small/a2.jpg"
-                                    alt="Chambre avec 2 lits lumineuse" title="Cliquer ici pour agrandir">
-                                </div>
-                                </div>
-                                <figcaption class=fig-cap-bottom>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color"><b>Hôtel du port</b></h3>
+                                    <figcaption class=fig-cap-bottom>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color"><b>Hôtel Les mouettes</b></h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color">Nuit à partir de 76€</h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star grey-star"></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="fig-width">
+                            <a class="photo-left-center"
+                                href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a44.jpg">
+                                <figure>
+                                    <div class="heb-ratio-img">
+                                        <div class="heb-content-one">
+                                            <img class="heb-marseille-img"
+                                                src="./Ressources+Booki+FR/images/hebergements/4_small/a4.jpg"
+                                                alt="Lit double avec tableau de la mer"
+                                                title="Cliquer ici pour agrandir">
+                                        </div>
                                     </div>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color">Nuit à partir de 52€</h3>
+                                    <figcaption class=fig-cap-bottom>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color"><b>Hôtel de la mer</b></h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color">Nuit à partir de 46€</h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star grey-star"></span>
+                                            <span class="fas fa-star grey-star"></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="fig-width">
+                            <a class="photo-left-center"
+                                href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a55.jpg">
+                                <figure>
+                                    <div class="heb-ratio-img">
+                                        <div class="heb-content-one">
+                                            <img class="heb-marseille-img"
+                                                src="./Ressources+Booki+FR/images/hebergements/4_small/a5.jpg"
+                                                alt="Lits superposés en bois" title="Cliquer ici pour agrandir">
+                                        </div>
                                     </div>
-                                    <div class="left-border-radius">
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
+                                    <figcaption class=fig-cap-bottom>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color"><b>Auberge Le Panier</b></h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color">Nuit à partir de 23€</h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star grey-star"></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="fig-width">
+                            <a class="photo-left-center"
+                                href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a66.jpg">
+                                <figure>
+                                    <div class="heb-ratio-img">
+                                        <div class="heb-content-one">
+                                            <img class="heb-marseille-img"
+                                                src="./Ressources+Booki+FR/images/hebergements/4_small/a6.jpg"
+                                                alt="Chambre très lumineuse avec grande télé"
+                                                title="Cliquer ici pour agrandir">
+                                        </div>
                                     </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="fig-width">
-                        <a class="photo-left-center" href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a33.jpg">
-                            <figure>
-                                <div class="heb-ratio-img">
-                                <div class="heb-content-one">
-                                <img class="heb-marseille-img"
-                                    src="./Ressources+Booki+FR/images/hebergements/4_small/a3.jpg"
-                                    alt="Chambre avec armoire et lampe de chevet" title="Cliquer ici pour agrandir">
-                                </div>
-                                </div>
-                                <figcaption class=fig-cap-bottom>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color"><b>Hôtel Les mouettes</b></h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color">Nuit à partir de 76€</h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star grey-star"></span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="fig-width">
-                        <a class="photo-left-center" href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a44.jpg">
-                            <figure>
-                                <div class="heb-ratio-img">
-                                <div class="heb-content-one">
-                                <img class="heb-marseille-img"
-                                    src="./Ressources+Booki+FR/images/hebergements/4_small/a4.jpg"
-                                    alt="Lit double avec tableau de la mer" title="Cliquer ici pour agrandir">
-                                </div>
-                                </div>
-                                <figcaption class=fig-cap-bottom>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color"><b>Hôtel de la mer</b></h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color">Nuit à partir de 46€</h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star grey-star"></span>
-                                        <span class="fas fa-star grey-star"></span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="fig-width">
-                        <a class="photo-left-center" href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a55.jpg">
-                            <figure>
-                                <div class="heb-ratio-img">
-                                <div class="heb-content-one">
-                                <img class="heb-marseille-img"
-                                    src="./Ressources+Booki+FR/images/hebergements/4_small/a5.jpg"
-                                    alt="Lits superposés en bois" title="Cliquer ici pour agrandir">
-                                </div>
-                                </div>
-                                <figcaption class=fig-cap-bottom>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color"><b>Auberge Le Panier</b></h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color">Nuit à partir de 23€</h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star grey-star"></span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="fig-width">
-                        <a class="photo-left-center" href="./Ressources+Booki+FR/images/hebergements/1_xlarge/a66.jpg">
-                            <figure>
-                                <div class="heb-ratio-img">
-                                <div class="heb-content-one">
-                                <img class="heb-marseille-img"
-                                    src="./Ressources+Booki+FR/images/hebergements/4_small/a6.jpg"
-                                    alt="Chambre très lumineuse avec grande télé" title="Cliquer ici pour agrandir">
-                                </div>
-                                </div>
-                                <figcaption class=fig-cap-bottom>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color"><b>Hôtel chez Amina</b></h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <h3 class="text-black-color">Nuit à partir de 96€</h3>
-                                    </div>
-                                    <div class="left-border-radius">
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                        <span class="fas fa-star blue-star"></span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                                    <figcaption class=fig-cap-bottom>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color"><b>Hôtel chez Amina</b></h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <h3 class="text-black-color">Nuit à partir de 96€</h3>
+                                        </div>
+                                        <div class="left-border-radius">
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                            <span class="fas fa-star blue-star"></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
                     <div class="sixth">
                         <h3 id="little-text">Afficher plus</h3>
@@ -362,12 +371,12 @@
                 </aside>
             </section>
             <div class="activities">
-                <h2 class="title-activities">Activités à Marseille</h2>
+                <h2 id="activitesamarseille" class="title-activities">Activités à Marseille</h2>
                 <div class="act-box act-block-cards">
                     <div class="row act-shadow act-pointer">
                         <a href="./Ressources+Booki+FR/images/activites/1_xlarge/c11.jpg">
                             <figure>
-                                    <img class="alone-in-row" src="./Ressources+Booki+FR/images/activites/3_medium/c1m.jpg"
+                                <img class="alone-in-row" src="./Ressources+Booki+FR/images/activites/3_medium/c1m.jpg"
                                     alt="Vue du port" title="Cliquer ici pour agrandir">
                                 <figcaption class="figc-size-cont"><b class="text-black-color">Vieux Port</b>
                                 </figcaption>
@@ -378,7 +387,8 @@
                         <div class="column act-shadow act-pointer">
                             <a href="./Ressources+Booki+FR/images/activites/1_xlarge/c22.jpg">
                                 <figure>
-                                    <img id="twin-in-row-one" src="./Ressources+Booki+FR/images/activites/4_small/c2.jpg"
+                                    <img id="twin-in-row-one"
+                                        src="./Ressources+Booki+FR/images/activites/4_small/c2.jpg"
                                         alt="Fort de Pomègues au milieu des rochers" title="Cliquer ici pour agrandir">
                                     <figcaption class="figc-size-cont"><b class="text-black-color">Fort de Pomègues</b>
                                     </figcaption>
@@ -388,7 +398,8 @@
                         <div class="column act-shadow act-pointer">
                             <a href="./Ressources+Booki+FR/images/activites/1_xlarge/c33.jpg">
                                 <figure>
-                                    <img id="twin-in-row-two" src="./Ressources+Booki+FR/images/activites/4_small/c3.jpg"
+                                    <img id="twin-in-row-two"
+                                        src="./Ressources+Booki+FR/images/activites/4_small/c3.jpg"
                                         alt="Iles du Frioul vu de la côte" title="Cliquer ici pour agrandir">
                                     <figcaption class="figc-size-cont"><b class="text-black-color">Iles du Frioul</b>
                                     </figcaption>
@@ -399,9 +410,10 @@
                     <div class="row act-shadow act-pointer">
                         <a href="./Ressources+Booki+FR/images/activites/1_xlarge/c44.jpg">
                             <figure>
-                                <img class="alone-in-row" src="./Ressources+Booki+FR/images/activites/4_small/c4.jpg"
+                                <img class="alone-in-row" src="./Ressources+Booki+FR/images/activites/3_medium/c4m.jpg"
                                     alt="Vue de la côte entre mer et rochers" title="Cliquer ici pour agrandir">
-                                <figcaption class="figc-size-cont"><b class="text-black-color">Parc National des Calanques</b>
+                                <figcaption class="figc-size-cont"><b class="text-black-color">Parc National des
+                                        Calanques</b>
                                 </figcaption>
                             </figure>
                         </a>
@@ -410,10 +422,12 @@
                         <div class="column act-shadow act-pointer">
                             <a href="./Ressources+Booki+FR/images/activites/1_xlarge/c55.jpg">
                                 <figure id="act-landscape-height-garde">
-                                    <img id="twin-in-row-three" src="./Ressources+Booki+FR/images/activites/4_small/c5.jpg"
+                                    <img id="twin-in-row-three"
+                                        src="./Ressources+Booki+FR/images/activites/4_small/c5.jpg"
                                         alt="Vue de la cathédrale perchée sur la colline"
                                         title="Cliquer ici pour agrandir">
-                                    <figcaption class="figc-size-cont"><b class="text-black-color">Notre-Dame-de-la-Garde</b>
+                                    <figcaption class="figc-size-cont"><b
+                                            class="text-black-color">Notre-Dame-de-la-Garde</b>
                                     </figcaption>
                                 </figure>
                             </a>
@@ -421,7 +435,8 @@
                         <div class="column act-shadow act-pointer">
                             <a href="./Ressources+Booki+FR/images/activites/1_xlarge/c66.jpg">
                                 <figure id="act-landscape-height-champ">
-                                    <img id="twin-in-row-forth" src="./Ressources+Booki+FR/images/activites/4_small/c6.jpg"
+                                    <img id="twin-in-row-forth"
+                                        src="./Ressources+Booki+FR/images/activites/4_small/c6.jpg"
                                         alt="Vue de la grande fontaine dans le parc" title="Cliquer ici pour agrandir">
                                     <figcaption class="figc-size-cont"><b class="text-black-color">Parc Longchamp</b>
                                     </figcaption>
@@ -435,42 +450,42 @@
         </main>
         <footer>
             <div class="footer-position-setting">
-            <section>
-                <p class="footer-nowrap footer-pad">A propos</p>
-                <ul class="footer-column">
-                    <li class="footer-font footer-nowrap">
-                        <a>Fonctionnement du site</a>
-                    </li>
-                    <li class="footer-font footer-nowrap">
-                        <a>Conditions générales de vente</a>
-                    </li>
-                    <li class="footer-font footer-nowrap">
-                        <a>Données et confidentialité</a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <p class="footer-nowrap footer-pad">Nos hébergements</p>
-                <ul class="footer-column">
-                    <li class="footer-font footer-nowrap">
-                        <a>Charte qualité</a>
-                    </li>
-                    <li class="footer-font footer-nowrap">
-                        <a>Soumettre votre hôtel</a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <p class="footer-nowrap footer-pad">Assistance</p>
-                <ul class="footer-column">
-                    <li class="footer-font footer-nowrap">
-                        <a>Centre d'aide</a>
-                    </li>
-                    <li class="footer-font footer-nowrap">
-                        <a>Nous contacter</a>
-                    </li>
-                </ul>
-            </section>
+                <section>
+                    <p class="footer-nowrap footer-pad">A propos</p>
+                    <ul class="footer-column">
+                        <li class="footer-font footer-nowrap">
+                            <a>Fonctionnement du site</a>
+                        </li>
+                        <li class="footer-font footer-nowrap">
+                            <a>Conditions générales de vente</a>
+                        </li>
+                        <li class="footer-font footer-nowrap">
+                            <a>Données et confidentialité</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="footer-nowrap footer-pad">Nos hébergements</p>
+                    <ul class="footer-column">
+                        <li class="footer-font footer-nowrap">
+                            <a>Charte qualité</a>
+                        </li>
+                        <li class="footer-font footer-nowrap">
+                            <a>Soumettre votre hôtel</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="footer-nowrap footer-pad">Assistance</p>
+                    <ul class="footer-column">
+                        <li class="footer-font footer-nowrap">
+                            <a>Centre d'aide</a>
+                        </li>
+                        <li class="footer-font footer-nowrap">
+                            <a>Nous contacter</a>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </footer>
     </div>
