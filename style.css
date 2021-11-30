@@ -89,7 +89,6 @@ form, input {
     line-height: 0;
 }
 
-
 header {
     width: 100%;
     max-width: 1440px;
@@ -102,8 +101,9 @@ header {
 
 /*1st header*/
 
-.logo-links {
-    max-width: 1440px;
+.logo-and-links {
+    /* max-width: 1440px; */
+    width: 96%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -131,22 +131,21 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    top: 0px;
 }
 
 nav ul{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     border-style: none;
 }
 
 nav ul li {
-    float: left;
     display: flex;
+    position: relative;
+    top: -29px;
     text-align: center;
     border-style: none;
 }
-
 
 .ul-links {
     width: 100%;
@@ -158,8 +157,7 @@ nav ul li {
 }
 
 .link {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 15px 15px 15px;
 }
 
 .link:hover {
@@ -178,7 +176,7 @@ nav ul li {
     width: 100%;
     padding: 0;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.5%;
     margin-right: 2.5%;
     margin-left: 2.5%;
     display: flex;
@@ -189,8 +187,8 @@ nav ul li {
 }
 
 h1 {
-    font-weight: 155%;
-    font-size: 700;
+    font-weight: 700;
+    font-size: 26px;
     
     margin-bottom: -0.31em;
     padding: 10px;
@@ -199,9 +197,10 @@ h1 {
 
 h2 {
     padding: 10px;
-    font-size: 100%;
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 0.3em;
-    /*border-style: ridge;*/
+    /* border-style: ridge; */
 }
 
 /* Icone and input */
@@ -305,15 +304,15 @@ input[type="submit"] {
 
 /* Filters and Informations*/
 
-.flex-filters {
+.filters-flex-position {
     display: flex;
     margin-right: 2.5%;
     margin-left: 2.5%;
+    margin-top: 12px;
+    margin-bottom: -18px;
 }
 
 .filters {
-    /*max-height: 4%;
-    min-height: 2%;*/
     width: 74%;
 
     display: flex;
@@ -325,44 +324,49 @@ input[type="submit"] {
     margin-bottom: 20px;
     margin-left: 10px;
     gap: 1%;
-    /* border-style: ridge; */
 }
 
-.real-filters {
+.filters-word {
     width: 7.86%;
     height: 100%;
     display: flex;
     /* flex-wrap: nowrap; */
     /* flex-direction: row; */
     align-items: baseline;
-    font-size: x-large;
-    line-height: 2;
+    font-size: 20px;
+    line-height: 2.5;
 }
 
-#percent-first {
-    width: 21.73%;
+#size-first {
+    width: 21.03%;
 }
 
-#percent-second {
-    width: 17.06%;
+#size-second {
+    width: 16.06%;
 }
 
-#percent-third {
-    width: 20.21%;
+#size-third {
+    width: 19.71%;
 }
 
-#percent-forth {
-    width: 24.82%;
+#size-forth {
+    width: 23.82%;
 }
 
-.different-filters{
+.rounded-filters {
+    height: 50px;
+
     display: flex;
-    align-content: center;
-    white-space: nowrap;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-around;
 
-    font-weight: bold;
-    line-height: 1.8;
-    z-index: 1;
+    background-color: white;
+    border: 3px solid;
+    border-color: #F2F2F2;
+    border-radius: 30px;
+    font-size: x-large;
+    cursor: pointer;
 }
 
 .fas.fa-money-bill-wave {
@@ -433,30 +437,21 @@ input[type="submit"] {
     z-index: 2;
 }
 
-.rounded-filters {
-    /*max-height: 4%;
-    min-height: 2%;*/
-    height: 50px;
-
+.filters-text{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-around;
+    align-content: center;
+    white-space: nowrap;
 
-    background-color: white;
-    border: 3px solid;
-    border-color: #F2F2F2;
-    border-radius: 30px;
-    font-size: x-large;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2.1;
+    z-index: 1;
 
-    /* gap: 2%; */
-    cursor: pointer;
+    padding: 0 18px 0 0;
 }
 
-.justify {
-    display: flex;
-    flex-wrap: nowrap;
+#text-specific-position {
+    padding: 0 18px 0 12px;
 }
 
 /* Informations */
@@ -472,7 +467,7 @@ input[type="submit"] {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 2.5%;
-    margin-left: 2.5%;
+    margin-left: 3%;
 }
 
 
@@ -482,8 +477,10 @@ input[type="submit"] {
     margin-left: 5px;
 }
 
-.line-height {
-    line-height: 0;
+.info-text {
+    line-height: 1.1;
+    font-weight: 500;
+    padding-left: 10px;
 }
 /*Main*/
 
@@ -616,32 +613,6 @@ input[type="submit"] {
 }
 
 .aside-content-one {
-    float: center;
-}
-/* Resize img activities by CSS */
-.act-ratio-portrait-img {
-    position: relative;
-    width: 100%;
-}
-
-.act-ratio-portrait-img:after {
-    content: "";
-    float: center;
-    padding-top: 200%;
-}
-
-.act-ratio-img {
-    position: relative;
-    width: 100%;
-}
-
-.act-ratio-img:after {
-    content: "";
-    float: center;
-    padding-top: 50%;
-}
-
-.act-content-one {
     float: center;
 }
 
