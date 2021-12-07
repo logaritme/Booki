@@ -66,7 +66,7 @@ q:before, q:after {
 
 body {
     width: 100%;
-    max-width: 1583px;
+    max-width: 1440px;
 	line-height: 1;
     display:flex;
     background-color: white;
@@ -82,8 +82,6 @@ div, section, header {
     text-decoration: none;
 }
 
-
-
 form, input {
     margin: 0;
     padding: 0;
@@ -93,7 +91,6 @@ form, input {
 }
 
 header {
-
     margin: 0;
 	padding: 0;
     display: flex;
@@ -104,7 +101,6 @@ header {
 
 .logo-and-links {
     width: 100%;
-    max-width: 1583px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -136,7 +132,6 @@ header {
 nav ul{
     display: flex;
     list-style-type: none;
-    /* border-style: none; */
 }
 
 nav ul li {
@@ -144,7 +139,6 @@ nav ul li {
     position: relative;
     top: -29px;
     text-align: center;
-    /* border-style: none; */
 }
 
 .ul-links {
@@ -171,7 +165,7 @@ nav ul li {
 }
 
 /* 2nd header Text*/
-/* conflit h1 */
+
 .text-only {
     width: 100%;
     padding: 0 2.5% 0.5% 2.5%;
@@ -201,11 +195,9 @@ h2 {
     width: 100%;
     height: 50px;
     background-color: white;
-    /* height: 7.2vh; */
     display: flex;
     flex-direction: row;
-    /* margin-right: 2.5%; */
-    margin-left: 2.5%;
+    padding-left: 2.5%;
 }
 
 #form {
@@ -214,7 +206,6 @@ h2 {
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
-    /* border-style: ridge; */
 }
 
 .map-marker-radius {
@@ -226,7 +217,6 @@ h2 {
     border-color: #F2F2F2;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    /* border-style: ridge; */
 }
 
 .fas.fa-map-marker-alt{
@@ -248,7 +238,6 @@ h2 {
     border-color: #F2F2F2;
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
-    /* border-style: ridge; */
 }
 
 .span-center {
@@ -278,8 +267,6 @@ input[type="submit"] {
     margin: 0;
     width: 250px;
     height: 50px;
-    /* border-color: white; */
-    /* border-style: ridge; */
 }
 
 #search-click {
@@ -515,12 +502,12 @@ input[type="submit"] {
 }
 
 .fig-width {
-    max-width: 245px;
     width: 100%;
+    max-width: 245px;
     height: 30vh;
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     /* justify-content: space-between; ou space-evenly*/
     gap: 1vw;
     box-shadow: 8px 8px 8px grey;
@@ -737,7 +724,7 @@ aside {
 
 .aside-card-self {
     width: 80%;
-    max-width: 1583px;
+    /*  */
     height: 20vh;
     display: flex;
     flex-flow: row nowrap;
@@ -819,7 +806,7 @@ p::first-letter{
 
 section {
     width: 100%;
-    max-width: 1583px;
+    
     margin: 0;
     padding: 0;
     display: flex;
@@ -863,7 +850,7 @@ ul {
 
 .main-container {
     width: 100%;
-    max-width: 1583px;
+    max-width: 1440px;
     height: 100%;
     display: flex;
     align-items: stretch;
@@ -875,7 +862,7 @@ ul {
 .act {
     display: flex;
     width: 100%;
-    max-width: 1583px;
+    
     align-items: stretch;
     flex-flow: row wrap;
     background-color: rgb(255, 255, 255);
@@ -1014,7 +1001,7 @@ ul {
 
 footer {
     width: 100%;
-    max-width: 1583px;
+    
     height: 210px;
     display: flex;
     flex-direction: row;
@@ -1072,9 +1059,13 @@ footer a:hover{
     body {
         width: auto;
     }
+
+    .main-container {
+        width: auto;
+    }
     
     .logo-and-links {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-flow: column nowrap;
         align-items: unset;
@@ -1089,18 +1080,18 @@ footer a:hover{
         font-size: 16px;
     }
     .nav-size-pos {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-flow: row nowrap;
     }
     .ul-links {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-flow: row nowrap;
         text-align: center;
     }
     .link {
-        width: %;
+        width: auto;
     }
     .link:hover {
         border-bottom: 2px solid #0065fc;
@@ -1113,7 +1104,7 @@ footer a:hover{
         margin-top: 1%;
     }
     .left-center{
-        width: 97%;
+        width: auto;
         background-color: #fff;
         border-radius: 0;
         margin-top: 25px;
@@ -1124,7 +1115,7 @@ footer a:hover{
     }
 
     .fig-width {
-        width: 100%;
+        width: auto;
         height: 30vh;
         /* justify-content: space-between; ou space-evenly*/
         gap: 1vw;
@@ -1138,7 +1129,7 @@ footer a:hover{
     }
 
     aside {
-        width: 97%;
+        width: auto;
         display: flex;
         flex-flow: column-reverse nowrap;
     }
@@ -1149,6 +1140,16 @@ footer a:hover{
         text-align: center;
         font-size: 16px;
     }
+    .ul-links {
+    }
+    .normal-link {
+        margin: auto;
+    }
+
+    .link {
+        text-align: center;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -1156,7 +1157,7 @@ footer a:hover{
     body { width: auto;
     }
     .central-section {
-        max-width: 100%;
+        /* max-width: 100%; */
         display: flex;
         align-items: stretch;
         flex-flow: column-reverse nowrap;
@@ -1204,8 +1205,7 @@ footer a:hover{
     .act-block-cards {
 }
 
-@media screen and (max-width: 1399px) {
+/* @media screen and (max-width: 1399px) { */
     /* Règles desktop */
-    body { width: auto;
-    }
-}
+    /* body { width: auto; } */
+/* } */
