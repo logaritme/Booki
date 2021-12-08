@@ -1,6 +1,6 @@
 /* Il me faut un @viewport dans mon CSS */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /*Règles mobiles*/
   body {
       width: auto;
@@ -67,25 +67,43 @@
       width: 50px;
   }
 
+  /* Form */
+
   #form {
       width: 95%;
       display: flex;
       justify-content: center;
   }
 
+  /* Blue button */
+
+  .search-button {
+    border-radius: 17px;
+    transform: translate(-50%);
+}
+
   #search-click {
     display: none;
 }
 
   #search-click-mobile {
-    width: 50px;
-    display:inline-block;
-    border-radius: 17px;
-  }
+    display: flex;
+    justify-content: center;
 }
 
-/* Form */
+.fas.fa-search {
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  line-height: 2;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: #0065FC;
+  border-color: #0065FC;
+  border-radius: 17px;
+}
 
+/* Special class do not erase */
   .flex-a {
     display: flex;
     flex-flow: row nowrap;
@@ -93,28 +111,7 @@
     justify-items: center;
     cursor: pointer;
   }
-
-  .search-border {
-    display: none;
-  }
-
-  .search-border-mobile {
-    border: 1px solid #0065FC;
-    border-radius: 17px;
-    transform: translate(-50%);
-  }
-
-  .fas.fa-search {
-    width: 48px;
-    height: 48px;
-    color: #fff;
-    line-height: 2;
-    font-size: 24px;
-    font-weight: 900;
-    background-color: #0065FC;
-    border-color: #0065FC;
-    border-radius: 17px;
-}
+/*^Special class do not erase^*/
 
 /* End of form */
 
