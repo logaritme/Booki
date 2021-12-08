@@ -1,0 +1,127 @@
+/* Il me faut un @viewport dans mon CSS */
+
+@media screen and (max-width: 767px) {
+  /*Règles mobiles*/
+  body {
+      width: auto;
+  }
+
+  a:hover {
+    border-top: #0065FC 3px solid;
+    color: #0065FC;
+}
+
+  .main-container {
+      width: 100%;
+  }
+  
+  .logo-and-links {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-content: center;
+      margin: unset;
+      padding: unset;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .nav-size-pos {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+  }
+  .ul-links {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      text-align: center;
+      align-content: center;
+  }
+  .link {
+      width: 50%;
+      border-bottom: 2px solid #f2f2f2;
+  }
+  .link:hover {
+      border-bottom: 2px solid #0065fc;
+      border-top: none;
+  }
+  .normal-link {
+      text-align: center;
+  }
+
+  .left-border-radius {
+      margin-top: 1%;
+  }
+
+  .map-marker-radius {
+      width: 50px;
+  }
+
+  #search-click {
+      width: 50px;
+  }
+
+  #form {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+  }
+
+  input[type="submit"] {
+      content: "f002";<i class="fas fa-search"></i>
+  }
+
+  .left-center{
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0;
+      margin-top: 25px;
+      padding-bottom: 3.5vh;
+  }
+  .sixth {
+      background-color: #fff;
+  }
+
+  .fig-width {
+      width: 100%;
+      height: 30vh;
+      /* justify-content: space-between; ou space-evenly*/
+      gap: 1vw;
+      box-shadow: 8px 8px 8px grey;
+      border-radius: 17px 17px 17px 17px;
+      border: 3px solid white;
+      box-sizing: border-box;
+      background-color: white;
+      margin: 2.5%;
+      overflow: hidden;
+  }
+
+  aside {
+      width: auto;
+      display: flex;
+      flex-flow: column-reverse nowrap;
+  }
+  .sixth {
+      text-align: left;
+  }
+  .medium-text {
+      text-align: center;
+      font-size: 16px;
+  }
+  .ul-links {
+  }
+  .normal-link {
+      margin: auto;
+  }
+
+  .link {
+      text-align: center;
+      margin: auto;
+  }
+  #search-click {
+      border-radius: 17px;
+  }
+}

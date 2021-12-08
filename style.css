@@ -1,21 +1,51 @@
+/* Index 
+
+1 || GLOBAL SETTINGS
+    1.1 | GENERAL PAGE LAYOUT
+    1.2 | CARD DESIGN
+    1.3 | CARD SHADOW ANIMATION
+    1.4 | STARS PROPERTIES
+
+2 || DESKTOP LAYOUT
+    2.1 | MAIN CONTAINER
+        2.1.1 | HEADER  : NAVIGATION MENU
+        2.1.2 | SECTION : SLOGAN
+        2.1.3 | SECTION : SEARCH
+        2.1.4 | SECTION : ACCOMODATIONS
+        2.1.5 | CONTAINER : LODGING
+        2.1.6 | CONTAINER : MOST POPULARS
+        2.1.7 | ACTIVITIES
+    2.2 | SECONDARY CONTAINER
+        2.2.1 | FOOTER
+
+3 || MEDIA QUERIES SPECIFIC RULES
+    3.1 | TABLET MEDIA QUERY
+    3.2 | MOBILE MEDIA QUERY
+
+
+Tip: you can jump to a specific section by searching for index name or id. ex : [CTRL + F] "3 ||" or [CTRL + F] "2.1.7 |"
+
+*/
+
+/* 1 || GLOBAL SETTINGS */
+
+    /* 1.1 | GENERAL PAGE LAYOUT */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 * {
-    margin: 0;
-    padding: 0;
-	font-size: 100%;
-    font-family: 'Raleway', Arial , "Arial Black" , Courier New, Helvetica, sans-serif;
-    /*border-style: ridge;*/
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Arial , "Arial Black" , Courier New, Helvetica, sans-serif;
+	font-size: 100%;
 }
+
+/* And Cf: normalize.css */
+
+/* ( Not all the ) Alphabetic semantic tags */
 
 a {
     text-decoration: none;
@@ -25,11 +55,6 @@ a {
 a:hover {
     color: #0065fc;
 }
-/* Version mobile et tablette */
-/* a:hover {
-    border-top: #0065FC 3px solid;
-    color: #0065FC;
-}*/
 
 article {
     display: flex;
@@ -69,6 +94,7 @@ body {
     max-width: 1440px;
 	line-height: 1;
     display:flex;
+    flex-flow: column nowrap;
     background-color: white;
     }
 
@@ -76,6 +102,10 @@ button {
     margin: 0;
 	padding: 0;
     background-color:#0065fc;
+}
+
+button:hover{
+
 }
 
 div, section, header {
@@ -97,34 +127,70 @@ header {
     background-color: white;
 }
 
-/*1st header*/
+
+image {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
+
+li {
+    margin: 0;
+	padding: 0;
+    display: flex;
+	list-style-type: none;
+}
+
+ol {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+	list-style-type: none;
+}
+
+p::first-letter{
+    font-style: unset;
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+}
+
+ul {
+    margin: 0;
+	padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+	list-style-type: none;
+}
+
+/* 2.1.1 | HEADER  : NAVIGATION MENU */
 
 .logo-and-links {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background-color: white;
-    padding-top: 2.2%;
     padding-bottom: 0.66%;
-    /* padding-right: 2.5%; */
+    padding-right: 2.5%;
     padding-left: 2.5%;
 }
 
-/* Logo Booki */
-
-.logo {
-    float: left;
-    flex-grow: 1;
-    flex-basis: auto;
-    width: 45%;
-}
-
-/* Liens */
+/* LINKS */
 
 .nav-size-pos {
-    width: 20%;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -132,13 +198,6 @@ header {
 nav ul{
     display: flex;
     list-style-type: none;
-}
-
-nav ul li {
-    display: flex;
-    position: relative;
-    top: -29px;
-    text-align: center;
 }
 
 .ul-links {
@@ -151,13 +210,14 @@ nav ul li {
 }
 
 .link {
+    text-align: center;
     padding: 40px 15px 15px 15px;
+    border-top: 2px solid #fff;
 }
 
 .link:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    margin-top: -2px;
 }
 
 .normal-link {
@@ -183,7 +243,7 @@ h1 {
 }
 
 h2 {
-    padding: 10px;
+    padding: 0 10px 10px 0;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0.3em;
@@ -215,8 +275,7 @@ h2 {
     background-color: #F2F2F2;
     border: 3px solid;
     border-color: #F2F2F2;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 17px 0 0 17px;
 }
 
 .fas.fa-map-marker-alt{
@@ -328,7 +387,7 @@ input[type="submit"] {
 }
 
 #size-forth {
-    width: 23.82%;
+    width: 26%;
 }
 
 .rounded-filters {
@@ -376,7 +435,7 @@ input[type="submit"] {
     background-color: #deebff;
     border-radius: 50%;
     
-    margin-left: -18px;
+    margin-left: -8px;
     line-height: 2;
     z-index: 2;
 }
@@ -393,7 +452,7 @@ input[type="submit"] {
     background-color: #deebff;
     border-radius: 50%;
     
-    margin-left: -19px;
+    margin-left: -6px;
     line-height: 2;
     z-index: 2;
 }
@@ -661,7 +720,6 @@ input[type="submit"] {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    /* border-style: ridge; */
 }
 
 .set-chart-line {
@@ -669,9 +727,7 @@ input[type="submit"] {
     height: 100%;
     display: flex;
     justify-content: flex-end;
-
     margin-top: 7px;
-    /* border-style: ridge; */
 }
 
 .fas.fa-chart-line {
@@ -693,11 +749,11 @@ input[type="submit"] {
     width: 50%;
     height: 100%;
     display: flex;
-    align-self: flex-end;
     flex-direction: row;
-    /* border-style: ridge; */
+    align-self: flex-end;
 }
 
+/* Aside "Les plus populaires" */
 
 aside {
     width: 29%;
@@ -706,10 +762,8 @@ aside {
     justify-content: flex-start;
     padding: 0;
     margin-left: 3%;
-    /* margin-right: 3%; */
     border-radius: 17px 17px 17px 17px;
     background-color: #F2F2F2;
-    /* border-style: ridge; */
 }
 
 .aside-cards-column {
@@ -718,13 +772,10 @@ aside {
     flex-flow: column nowrap;
     align-content: flex-end;
     align-items: stretch;
-    /* border-style: ridge; */
-
 }
 
 .aside-card-self {
     width: 80%;
-    /*  */
     height: 20vh;
     display: flex;
     flex-flow: row nowrap;
@@ -748,14 +799,14 @@ aside {
 }
 
 .aside-img {
-    display: flex;
     width: 40%;
     height: 20vh;
+    display: flex;
     object-fit: cover;
     object-position: center;
-    background-color: white;
     border: 4px solid white;
     border-radius: 17px 0px 0px 17px;
+    background-color: white;
 }
 
 .aside-card-txt {
@@ -767,67 +818,6 @@ aside {
     align-items: stretch;
     /* justify-content: flex-end; */
     border-radius: 0px 14px 14px 0px;
-}
-
-/* Remaining Alphabetic Semantic tags */
-
-button:hover{
-
-}
-
-image {
-    width: 20%;
-    height: 20%;
-    object-fit: cover;
-}
-
-
-li {
-    margin: 0;
-	padding: 0;
-    display: flex;
-    grid-gap: 15px;
-    gap: 15px;
-	list-style-type: none;
-}
-
-ol {
-    margin: 0;
-	padding: 0;
-    display: flex;
-    grid-gap: 15px;
-    gap: 15px;
-	list-style-type: none;
-}
-
-p::first-letter{
-    font-style: unset;
-}
-
-section {
-    width: 100%;
-    
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-span {
-    /*border-style: ridge;*/
-}
-
-ul {
-    margin: 0;
-	padding: 0;
-    display: flex;
-    grid-gap: 15px;
-    gap: 15px;
-	list-style-type: none;
-}
-
-.test div > p + div{
-    -moz-text-decoration-style: dotted;
 }
 
 .googlemap{
@@ -848,13 +838,19 @@ ul {
     background-color: silver;
 }
 
+/* 2 || DESKTOP LAYOUT */
+    
+    /* 2.1 | MAIN CONTAINER */
+
 .main-container {
-    width: 100%;
+    width: 97.5%;
     max-width: 1440px;
     height: 100%;
     display: flex;
     align-items: stretch;
     flex-flow: column nowrap;
+    margin-right: 1.25%;
+    margin-left: 1.25%;
 }
 
 /* Block activities*/
@@ -862,12 +858,11 @@ ul {
 .act {
     display: flex;
     width: 100%;
-    
     align-items: stretch;
     flex-flow: row wrap;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    padding: 0 0 5% 3%;
+    padding: 0 0 5% 2.75%;
 }
 
 .title-activities {
@@ -911,7 +906,7 @@ ul {
 }
 
 .column-in-row {
-    width: 21.8%;
+    width: 22.1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -920,7 +915,7 @@ ul {
 }
 
 .act-quarter {
-    width: 21.8%;
+    width: 22.1%;
 }
 
 .alone-in-row {
@@ -997,25 +992,34 @@ ul {
     border-radius: 0px 30px 30px 0px;
 }
 
-/* Footer */
+/* 2.2 | SECONDARY CONTAINER */
+
+.secondary-container {
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+}    
+
+    /* 2.2.1 | FOOTER */
 
 footer {
     width: 100%;
-    
     height: 210px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: end;
 	padding: 0;
     background-color: #F2F2F2;
 }
 
 .footer-position-setting {
-    width: 96%;
+    width: 92%;
     height: 210px;
     display: flex;
     padding-top: 15px;
-    padding-left: 50px;
+    padding-left: 8%;
 }
 
 .footer-column {
@@ -1043,169 +1047,18 @@ footer {
 }
 
 footer a:hover{
-    color: teal;
-    /*#DEEBFF*/
+    color: #0065fc;
 }
 
-#form-container a {
-
-}
-
-
-/* Il me faut un @viewport dans mon CSS */
-
-@media screen and (max-width: 767px) {
-    /*Règles mobiles*/
-    body {
-        width: auto;
-    }
-
-    .main-container {
-        width: auto;
-    }
+/* 3 || MEDIA QUERIES SPECIFIC RULES*/
     
-    .logo-and-links {
-        width: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: unset;
-        margin: unset;
-        padding: unset;
-    }
-
-    .logo {
-        position: relative;
-        left: 25%;
-        text-align: center;
-        font-size: 16px;
-    }
-    .nav-size-pos {
-        width: auto;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .ul-links {
-        width: auto;
-        display: flex;
-        flex-flow: row nowrap;
-        text-align: center;
-    }
-    .link {
-        width: auto;
-    }
-    .link:hover {
-        border-bottom: 2px solid #0065fc;
-    }
-    .normal-link {
-        text-align: center;
-    }
-
-    .left-border-radius {
-        margin-top: 1%;
-    }
-    .left-center{
-        width: auto;
-        background-color: #fff;
-        border-radius: 0;
-        margin-top: 25px;
-        padding-bottom: 3.5vh;
-    }
-    .sixth {
-        background-color: #fff;
-    }
-
-    .fig-width {
-        width: auto;
-        height: 30vh;
-        /* justify-content: space-between; ou space-evenly*/
-        gap: 1vw;
-        box-shadow: 8px 8px 8px grey;
-        border-radius: 17px 17px 17px 17px;
-        border: 3px solid white;
-        box-sizing: border-box;
-        background-color: white;
-        margin: 2.5%;
-        overflow: hidden;
-    }
-
-    aside {
-        width: auto;
-        display: flex;
-        flex-flow: column-reverse nowrap;
-    }
-    .sixth {
-        text-align: left;
-    }
-    .medium-text {
-        text-align: center;
-        font-size: 16px;
-    }
-    .ul-links {
-    }
-    .normal-link {
-        margin: auto;
-    }
-
-    .link {
-        text-align: center;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    /* Règles tablettes */
-    body { width: auto;
-    }
-    .central-section {
-        /* max-width: 100%; */
-        display: flex;
-        align-items: stretch;
-        flex-flow: column-reverse nowrap;
-    }
-    aside {
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-    .sixth {
-        margin: auto;
-    }
-    .medium-text {
-        margin: auto;
-        font-size: 16px;
-    }
-    .sixth {
-        text-align: center;
-    }
-    .medium-text {
-        text-align: center;
-        font-size: 16px;
-    }
-
-    #little-text {
-        font-size: 14px;
-        font-weight: 700;
-    }
-
-
-    .rounded-filters {
-    }
-
-    .fas.fa-money-bill-wave {
-    }
+    /* 3.1 | MOBILE MEDIA QUERY */
+    /* Cf: mob.css */
     
-    .fas.fa-child {
-    }
-    
-    .fas.fa-heart {
-    }
-    
-    .fas.fa-dog {
-    }
-    .act-block-cards {
-}
+    /* 3.2 | TABLET MEDIA QUERY */
+    /* Cf: tab.css */
 
-/* @media screen and (max-width: 1399px) { */
-    /* Règles desktop */
-    /* body { width: auto; } */
-/* } */
+/* @media screen and (max-width: 1399px) {
+     Règles desktop
+    body { width: auto; }
+} */

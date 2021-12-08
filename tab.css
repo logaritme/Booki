@@ -1,0 +1,54 @@
+@media screen and (max-width: 991px) {
+  /* Règles tablettes */
+  
+  body { width: auto;
+  }
+
+  .central-section {
+      /* max-width: 100%; */
+      display: flex;
+      align-items: stretch;
+      flex-flow: column-reverse nowrap;
+  }
+  aside {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+  }
+  .sixth {
+      margin: auto;
+  }
+  .medium-text {
+      margin: auto;
+      font-size: 16px;
+  }
+  .sixth {
+      text-align: center;
+  }
+  .medium-text {
+      text-align: center;
+      font-size: 16px;
+  }
+
+  #little-text {
+      font-size: 14px;
+      font-weight: 700;
+  }
+
+  .rounded-filters {
+  }
+
+  .fas.fa-money-bill-wave {
+  }
+  
+  .fas.fa-child {
+  }
+  
+  .fas.fa-heart {
+  }
+  
+  .fas.fa-dog {
+  }
+
+  .act-block-cards {
+  }
