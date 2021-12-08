@@ -31,7 +31,7 @@ Tip: you can jump to a specific section by searching for index name or id. ex : 
 
     /* 1.1 | GENERAL PAGE LAYOUT */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
 
 * {
     box-sizing: border-box;
@@ -264,8 +264,8 @@ h2 {
     width: 100%;
     height: 50px;
     display: flex;
-    align-items: stretch;
     flex-wrap: nowrap;
+    align-items: stretch;
 }
 
 .map-marker-radius {
@@ -285,13 +285,6 @@ h2 {
     align-self: center;
     justify-content: center;
     font-weight: 900;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: initial;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
     background-color: #F2F2F2;
     border: 3px solid;
     border-color: #F2F2F2;
@@ -307,19 +300,31 @@ h2 {
 input[type="search"] {
     color: black;
     font-size: 16px;
-    font-weight: 1000;
+    font-weight: 900;
+}
+
+span[type="submit"] {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    justify-content: center;
+}
+
+.search-border-mobile {
+    display: none;
+}
+
+.search-border {
+    border: 1px solid #0065FC;
+    border-radius: 0 17px 17px 0;
 }
 
 .flex-a {
     display: flex;
-    cursor: pointer;
-}
-
-input[type="submit"] {
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
+    align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #site-search {
@@ -334,11 +339,13 @@ input[type="submit"] {
     background: #0065fc;
     border: 3px solid;
     border-color: #0065fc;
-    border-top-right-radius: 17px;
-    border-bottom-right-radius: 17px;
+    border-radius: 0 17px 17px 0;
     cursor: pointer;
 }
 
+#search-click-mobile {
+    display: none;
+}
 /* Filters and Informations*/
 
 .filters-flex-position {

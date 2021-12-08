@@ -10,6 +10,9 @@
     <meta property="og:url" content="http://www.example.com/" />
     <meta property="og:image" content="http://example.com/image.jpg" />
     <meta property="og:description" content="Description Here" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@200;400;900&display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
@@ -22,9 +25,7 @@
 <body>
     <div class="main-container">
         <header class="logo-and-links">
-            <center>
             <img class="logo" src="./images/logo/Booki@3x.png" alt="Le logo de Booki" />
-            </center>
             <nav class="nav-size-pos">
                 <ul class="ul-links">
                     <li class="link"><a href="#hebergementsamarseille">
@@ -51,7 +52,10 @@
                     <a class="flex-a"
                         href="https://www.google.fr/maps/place/Marseille/@43.2805098,5.2405644,11z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf4344da5333:0x40819a5fd970220!8m2!3d43.296482!4d5.36978"
                         target="_blank">
-                        <input id="search-click" type="submit" value="Rechercher">
+                        <button class="flex-a search-border search-border-mobile">
+                            <span id="search-click"  type="submit" value="Rechercher">Rechercher</span>
+                            <span id="search-click-mobile" class="fas fa-search"></span>
+                        </button>
                     </a>
                 </form>
             </div>
