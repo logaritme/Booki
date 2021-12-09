@@ -395,20 +395,22 @@ input[type="search"] {
 /* 2.1.4.1 FILTERS */
 
 .filters-flex-position {
-    width: 100%;
-    padding-left: 2.5%;
-    padding-top: 12px;
-    margin-bottom: -18px;
-}
-
-.filters {
     width: 74%;
     display: flex;
-    align-items: stretch;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
+    flex-flow: row nowrap;
+    padding-left: 2.75%;
+    padding-top: 32px;
     gap: 1%;
+}
+
+.filter-button {
+    padding: 16px 14px;
+    background-color: white;
+    color: black;
+}
+
+.filter-button:hover {
+    color: red;
 }
 
 .filters-word {
@@ -418,32 +420,24 @@ input[type="search"] {
     align-items: baseline;
     font-size: 20px;
     line-height: 2.5;
+    font-weight: 700;
 }
 
-#size-first {
-    width: 21.03%;
-}
-
-#size-second {
-    width: 16.06%;
-}
-
-#size-third {
-    width: 19.71%;
-}
-
-#size-forth {
-    width: 26%;
+.filters-text{
+    display: flex;
+    align-content: center;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;
 }
 
 .rounded-filters {
     height: 50px;
-
     display: flex;
     flex-flow: row nowrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-around;
-
     background-color: white;
     border: 3px solid;
     border-color: #F2F2F2;
@@ -518,19 +512,6 @@ input[type="search"] {
     margin-left: -7px;
     line-height: 2;
     z-index: 2;
-}
-
-.filters-text{
-    display: flex;
-    align-content: center;
-    white-space: nowrap;
-
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 2.1;
-    z-index: 1;
-
-    padding: 0 18px 0 0;
 }
 
 #text-specific-position {
@@ -631,12 +612,11 @@ input[type="search"] {
 .sixth {
     width: 100%;
     background-color: #F2F2F2;
-    padding-left: 9%;
 }
 
 .medium-text {
     margin-top: 25px;
-    margin-left: -1%;
+    margin-left: 4%;
     font-size: 22px;
     font-weight: 900;
 }
@@ -646,6 +626,7 @@ input[type="search"] {
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 25px;
+    padding-left: 4%;
 }
 
 .cont-img {
