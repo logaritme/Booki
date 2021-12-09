@@ -179,7 +179,7 @@ ul {
 
 /* 1.4 | STARS PROPERTIES */
 
-.fas.fa-star.blue-star {
+.fa-star.blue-star {
     display: inline-block;
     height: 22px;
     color: #0065fc;
@@ -187,7 +187,7 @@ ul {
     font-size: 12px;
 }
 
-.fas.fa-star.grey-star {
+.fa-star.grey-star {
     display: inline-block;
     height: 22px;
     color: grey;
@@ -308,7 +308,7 @@ h2 {
     border-radius: 17px 0 0 17px;
 }
 
-.fas.fa-map-marker-alt{
+.fa-map-marker-alt{
     width: 100%;
     height: 50px;
     display: flex;
@@ -403,33 +403,31 @@ input[type="search"] {
     gap: 1%;
 }
 
-.filter-button {
-    padding: 16px 14px;
-    background-color: white;
-    color: black;
-}
-
-.filter-button:hover {
-    color: red;
-}
-
-.filters-word {
-    width: 7.86%;
-    height: 100%;
-    display: flex;
-    align-items: baseline;
-    font-size: 20px;
-    line-height: 2.5;
-    font-weight: 700;
-}
-
-.filters-text{
-    display: flex;
+.filters-text {
     align-content: center;
     white-space: nowrap;
     font-weight: bold;
     font-size: 20px;
-    z-index: 1;
+    padding: 16px 14px;
+    color: black;
+}
+
+.filters-text:hover {
+
+}
+
+.filters-word {
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border: 3px solid;
+    border-color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .rounded-filters {
@@ -446,41 +444,34 @@ input[type="search"] {
     cursor: pointer;
 }
 
-.fas.fa-money-bill-wave {
+.fa-money-bill-wave {
     width: 50px;
     height: 50px;
-
     display: flex;
     align-self: center;
     justify-content: center;
-
     color : #0065fc;
     background-color: #deebff;
     border-radius: 50%;
-
-    margin-left: -17px;
+    margin-left: -8px;
     line-height: 2;
-    z-index: 2;
 }
 
-.fas.fa-child {
+.fa-child {
     width: 50px;
     height: 50px;
-
     display: flex;
     align-self: center;
     justify-content: center;
-
     color : #0065fc;
     background-color: #deebff;
     border-radius: 50%;
-    
     margin-left: -8px;
     line-height: 2;
     z-index: 2;
 }
 
-.fas.fa-heart {
+.fa-heart {
     width: 50px;
     height: 50px;
 
@@ -497,7 +488,7 @@ input[type="search"] {
     z-index: 2;
 }
 
-.fas.fa-dog {
+.fa-dog {
     width: 50px;
     height: 50px;
 
@@ -512,10 +503,6 @@ input[type="search"] {
     margin-left: -7px;
     line-height: 2;
     z-index: 2;
-}
-
-#text-specific-position {
-    padding: 0 18px 0 12px;
 }
 
 /* 2.1.4.2 INFORMATIONS */
@@ -533,10 +520,20 @@ input[type="search"] {
 }
 
 
-.fas.fa-info-circle {
-    color: #0065fc;
+.fa-info-circle {
+    background-color: #0065fc;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    top: -4px;
+    left: -4px;
+}
 
-    margin-left: 5px;
+.info-size {
+    width: 24px;
+    height: 24px;
+    border: 4px solid black;
+    border-radius: 50%;
 }
 
 .info-text {
@@ -733,7 +730,7 @@ input[type="search"] {
     margin-top: 7px;
 }
 
-.fas.fa-chart-line {
+.fa-chart-line {
     align-self: center;
     width:  30px;
     height: 30px;

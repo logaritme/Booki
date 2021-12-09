@@ -29,6 +29,9 @@
 /* Logo */
 
   .logo {
+    position: relative;
+    left: 37.5%;
+    justify-content: center;
     width: 25%;
   }
 
@@ -126,14 +129,14 @@
 /* 2.1.4.1 FILTERS */
 
 .filters-flex-position {
-}
-
-.filters {
   display: flex;
   flex-flow: row wrap;
 }
 
 .filters-word {
+  width: 90%;
+  justify-content: start;
+
 }
 
 .rounded-filters {
