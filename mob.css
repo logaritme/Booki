@@ -1,10 +1,16 @@
-/* Il me faut un @viewport dans mon CSS */
+
+
+/* 3.1 | MOBILE MEDIA QUERY */
+
+/* Il me faut un @viewport dans mon CSS... oui et pourquoi? */
 
 @media screen and (max-width: 768px) {
   /*Règles mobiles*/
   body {
       width: auto;
   }
+
+/* Logo and links */
 
   a:hover {
     border-top: #0065FC 3px solid;
@@ -20,9 +26,13 @@
       padding: unset;
   }
 
+/* Logo */
+
   .logo {
     width: 25%;
   }
+
+/* Links */
 
   .nav-size-pos {
       width: 100%;
@@ -59,9 +69,7 @@
   .normal-link {
   }
 
-  .left-border-radius {
-      margin-top: 1%;
-  }
+/* Form */
 
   .map-marker-radius {
       width: 50px;
@@ -75,7 +83,15 @@
       justify-content: center;
   }
 
-  /* Blue button */
+  /* SEARCH BLUE BUTTON */
+
+  .flex-a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+  }
 
   .search-button {
     border-radius: 17px;
@@ -103,18 +119,33 @@
   border-radius: 17px;
 }
 
-/* Special class do not erase */
-  .flex-a {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-items: center;
-    cursor: pointer;
-  }
-/*^Special class do not erase^*/
-
 /* End of form */
 
+/* 2.1.4 FILTERS AND INFORMATIONS*/
+
+/* 2.1.4.1 FILTERS */
+
+.filters-flex-position {
+}
+
+.filters {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.filters-word {
+}
+
+.rounded-filters {
+}
+
+/* LODGING */
+
+
+  .left-border-radius {
+  margin-top: 1%;
+  }
+  
   .left-center{
       width: 100%;
       background-color: #fff;

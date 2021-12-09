@@ -1,3 +1,7 @@
+
+
+/* 3.2 | TABLET MEDIA QUERY */
+
 @media screen and (max-width: 992px) {
   /* Règles tablettes */
 
@@ -33,21 +37,6 @@
   #little-text {
       font-size: 14px;
       font-weight: 700;
-  }
-
-  .rounded-filters {
-  }
-
-  .fas.fa-money-bill-wave {
-  }
-  
-  .fas.fa-child {
-  }
-  
-  .fas.fa-heart {
-  }
-  
-  .fas.fa-dog {
   }
 
   .act-block-cards {
