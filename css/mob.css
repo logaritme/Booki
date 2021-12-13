@@ -110,7 +110,7 @@
     justify-content: center;
 }
 
-.fa-search {
+.fas.fa-search {
   width: 48px;
   height: 48px;
   color: #fff;
@@ -196,7 +196,7 @@
       margin-left: 10%;
     }
 
-.fa-chart-line {
+.fas.fa-chart-line {
     width: 0%;
     font-size: 24px;
     margin-top: 5%;
