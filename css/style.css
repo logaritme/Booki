@@ -274,8 +274,7 @@ nav ul{
 h1 {
     font-weight: 700;
     font-size: 26px;
-    margin: 0.67em -0.31em;
-    padding: 10px;
+    padding: 25px 0;
 }
 
 h2 {
@@ -555,6 +554,7 @@ input[type="search"] {
 
 .left-center{
     width: 66%;
+    height: 85%;
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
@@ -565,7 +565,7 @@ input[type="search"] {
 
 .six-cards-center {
     width: 100%;
-    height: 85%;
+    height: 75%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -580,15 +580,21 @@ input[type="search"] {
     background-color: white;
 }
 
-div div a figure div {
+.full-size {
     width: 100%;
-    height: 57%;
+    height: 100%;
+}
+
+.higher-size {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
 }
 
 .fig-width {
     width: 27%;
     /* max-width: 235px; */
-    height: 42%;
+    height: 15%;
     /* max-height: 235px; */
     display: flex;
     flex-flow: row wrap;
@@ -632,9 +638,8 @@ div div a figure div {
 
 .heb-marseille-img {
     /*background-size: 100%;*/
-    display: block;
     width: 100%;
-    height: 16.5vh;
+    display: block;
     object-fit: cover;
     object-position: center;
     /*background-size: 300px;*/
@@ -650,8 +655,8 @@ div div a figure div {
 
 .left-border-radius {
     border-radius: 17px 17px 0px 0px;
-    margin-left: 6%;
-    margin-top: 3%;
+    padding-top: 1%;
+    padding-left: 6%;
 }
 
 .black-color {
@@ -671,10 +676,11 @@ div div a figure div {
 }
 
 .space {
+    width: 100%;
+    height: 40%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-}
+    justify-content: space-around;
 
 .padding {
     padding: 15px 0 0 15px;
@@ -757,10 +763,9 @@ aside {
     flex-flow: column nowrap;
     justify-content: flex-start;
     padding: 0;
-
     border-radius: 17px 17px 17px 17px;
     background-color: #F2F2F2;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .aside-flex {
