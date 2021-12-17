@@ -278,10 +278,9 @@ h1 {
 }
 
 h2 {
-    padding: 0 10px 10px 0;
+    padding: 0 0 10px 0;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 0.3em;
 }
 
 
@@ -296,14 +295,6 @@ h2 {
     display: flex;
     flex-direction: row;
     padding-left: 2.5%;
-}
-
-#form {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
 }
 
 .map-marker-radius {
@@ -593,15 +584,12 @@ input[type="search"] {
 
 .fig-width {
     width: 27%;
-    /* max-width: 235px; */
-    height: 15%;
-    /* max-height: 235px; */
+    aspect-ratio: 4/3;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    /* justify-content: space-between; ou space-evenly*/
     box-shadow: 8px 8px 8px grey;
-    border-radius: 17px 17px 17px 17px;
+    border-radius: 17px;
     border: 3px solid white;
     box-sizing: border-box;
     background-color: white;
@@ -614,7 +602,15 @@ input[type="search"] {
     width: 100%;
     height: 7.5%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    background-color: #F2F2F2;
+}
+
+.sixth-bis {
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    align-items: flex-start;
     background-color: #F2F2F2;
 }
 
@@ -681,6 +677,7 @@ input[type="search"] {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+}
 
 .padding {
     padding: 15px 0 0 15px;
@@ -765,7 +762,7 @@ aside {
     padding: 0;
     border-radius: 17px 17px 17px 17px;
     background-color: #F2F2F2;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .aside-flex {
@@ -784,14 +781,14 @@ aside {
 
 .aside-card-self {
     width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
     height: 20vh;
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
     overflow: hidden;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 30px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 6px 4px 4px;
     border-radius: 14px 14px 14px 14px;
@@ -804,6 +801,11 @@ aside {
 .in-card-row {
     display: flex;
     flex-flow: row nowrap;
+}
+
+.aside-lower-size {
+    width: 40%;
+    height: 100%;
 }
 
 .aside-img {
@@ -829,6 +831,42 @@ aside {
 }
 
 /* 2 || DESKTOP LAYOUT */
+
+/* Set flex reusable */
+
+.flex {
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.flex-r-nw {
+    display: flex;
+    flex-flow: row nowrap;
+    /* background-color: red; */
+  }
+  
+  .flex-r-w {
+    display: flex;
+    flex-flow: row wrap;
+    /* background-color: violet; */
+  }
+  
+  .flex-c-nw {
+    display: flex;
+    flex-flow: column nowrap;
+    /* background-color: green; */
+  }
+  .flex-c-w {
+    display: flex;
+    flex-flow: column wrap;
+    /* background-color: khaki; */
+  }
+
+  .stretch {
+      display: flex;
+      align-items: stretch;
+  }
+
     /* 2.0 SUPER MAIN CONTAINER */
 
 .super-main-container {
