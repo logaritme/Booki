@@ -889,6 +889,9 @@ main {
 
 /* 2.1.7 | ACTIVITIES */
 
+.act-mars {
+}
+
 .act {
     width: 100%;
     height: 45%;
@@ -907,19 +910,22 @@ main {
     color: black;
 }
 
+/* FOR ALL THE ACTIVITY CARDS */
+
 .act-block-cards {
     width: 100%;
-    height: 450px;
+    height: 90%;
     display: flex;
     align-items: stretch;
     background-color: rgb(255, 255, 255);
     gap: 3.1%;
-    object-fit: cover;
 }
+
+/* FOR THE TWO ACTIVITY CARDS IN PORTRAIT */
 
 .act-block-cards-portrait {
     width: 100%;
-    height: 412px;
+    height: calc(100% - 50px);
 }
 
 .act-shadow {
@@ -929,7 +935,7 @@ main {
 
 .figc-size-cont {
     display: flex;
-    height: 5vh;
+    height: 50px;
     flex-direction: row;
     align-items: center;
     margin-left: 7%;
@@ -940,6 +946,22 @@ main {
     cursor: pointer;
 }
 
+#act-size-first {
+    height: 60%;
+}
+
+#act-size-second {
+    height: 30%;
+}
+
+#act-size-third {
+    height: 43%;
+}
+
+#act-size-forth {
+    height: 47%;
+}
+
 .column-in-row {
     width: 22.1%;
     height: 100%;
@@ -947,58 +969,35 @@ main {
     flex-direction: column;
     justify-content: space-between;
     gap: 10%;
-    /* border-style: ridge; */
 }
 
 .act-quarter {
+    height: 100%;
     width: 22.1%;
 }
 
-.act-first-size {
-    width: 100%;
-    height: 70%;
+.act-quarter a {
+    height: 100%;
 }
 
-.act-second-size {
-    width: 100%;
-    height: auto;
+.act-quarter a figure {
+    height: 100%;
 }
 
-.act-block-cards-first {
-    width: 100%;
-    height: 242px;
+.act-shadow a {
+    height: 100%;
 }
 
-.act-block-cards-second {
-    width: 100%;
-    height: 92px;
+.act-shadow a figure {
+    height: 100%;
 }
 
-.act-block-cards-third {
+.act-block-card-adapt {
     width: 100%;
-    height: 144px;
+    height: calc(100% - 50px);
 }
-.act-block-cards-forth {
-    width: 100%;
-    height: 190px;
-}
-
 
 .alone-in-row {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border: 10px solid white;
-    border-radius: 17px 17px 0px 0px;
-    background-color: white;
-    border: 3px solid white;
-    /* border-style: ridge; */
-}
-
-#twin-in-row-one {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1009,8 +1008,7 @@ main {
     border: 3px solid white;
 }
 
-#twin-in-row-two {
-    display: block;
+#twin-in-row-first {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1021,8 +1019,18 @@ main {
     border: 3px solid white;
 }
 
-#twin-in-row-three {
-    display: block;
+#twin-in-row-second {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 10px solid white;
+    border-radius: 17px 17px 0px 0px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+#twin-in-row-third {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1034,7 +1042,6 @@ main {
 }
 
 #twin-in-row-forth {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
