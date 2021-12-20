@@ -210,6 +210,7 @@ ul {
 .heading {
     width: 100%;
     height: 23%;
+    padding-left: 0.8%;
 }
 
 .logo-and-links {
@@ -219,7 +220,6 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    padding: 0 4% 0 2.25%;
 }
 
 /* LINKS */
@@ -264,7 +264,6 @@ nav ul{
 .text-only {
     width: 100%;
     height: 31%;
-    padding: 0 2.5% 0.5% 2.5%;
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
@@ -294,7 +293,6 @@ h2 {
     background-color: white;
     display: flex;
     flex-direction: row;
-    padding-left: 2.5%;
 }
 
 .map-marker-radius {
@@ -379,6 +377,7 @@ input[type="search"] {
 }
 
 .search-button {
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -399,7 +398,7 @@ input[type="search"] {
     height: 18%;
     display: flex;
     flex-flow: row nowrap;
-    padding: 1.1% 0 1.1% 2.75%;
+    padding: 1.1% 0 1.1% 0;
     gap: 1%;
 }
 
@@ -502,7 +501,7 @@ input[type="search"] {
     align-items: stretch;
     flex-flow: row nowrap;
     background-color: white;
-    padding: 1.1% 0 1.1% 3%;
+    padding: 1.1% 0 1.1% 0;
 }
 
 .info-size {
@@ -894,17 +893,17 @@ main {
 
 .act {
     width: 100%;
-    height: 45%;
+    height: 41%;
     display: flex;
     align-items: stretch;
     flex-flow: row wrap;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    padding: 0 0 5% 2.75%;
+    padding: 0 0 5% 0;
 }
 
 .title-activities {
-    padding-top: 3.5%;
+    padding: 5% 0 2% 0;
     font-size: 22px;
     font-weight: 900;
     color: black;
@@ -963,7 +962,7 @@ main {
 }
 
 .column-in-row {
-    width: 22.1%;
+    width: 22.5%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -973,7 +972,7 @@ main {
 
 .act-quarter {
     height: 100%;
-    width: 22.1%;
+    width: 22.5%;
 }
 
 .act-quarter a {
