@@ -46,10 +46,12 @@
   /* LOGO */
 
   .logo {
+    padding: 0;
+    width: 25%;
+    height: 25%;
     position: relative;
     left: 37.5%;
     justify-content: center;
-    width: 25%;
   }
 
   /* LINKS */
