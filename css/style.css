@@ -8,13 +8,14 @@
 
 2 || DESKTOP LAYOUT
     2.1 | MAIN CONTAINER
-        2.1.1 | HEADER  : NAVIGATION MENU
-        2.1.2 | SECTION : SLOGAN
-        2.1.3 | SECTION : SEARCH
-        2.1.4 | SECTION : FILTERS & INFORMATIONS
-        2.1.5 | CONTAINER : LODGING
-        2.1.6 | CONTAINER : MOST POPULARS
-        2.1.7 | ACTIVITIES
+        2.1.1 | HEADING  : NAVIGATION MENU
+        2.1.2 | HEADING : SLOGAN
+        2.1.3 | HEADING : SEARCH
+        2.1.4 | HEADING : FILTERS
+        2.1.5 | HEADING : INFORMATIONS
+        2.1.6 | MAIN : LODGING
+        2.1.7 | MAIN : MOST POPULARS
+        2.1.8 | MAIN : ACTIVITIES
     2.2 | SECONDARY CONTAINER
         2.2.1 | FOOTER
 
@@ -724,6 +725,7 @@ input[type="search"] {
   margin-left: 5%;
   font-size: 22px;
   font-weight: 700;
+  letter-spacing: -1.2px;
 }
 
 .set-chart-line {
@@ -764,11 +766,10 @@ aside {
   overflow: hidden;
 }
 
-.aside-flex {
+.aside-size {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: flex-start;
 }
 

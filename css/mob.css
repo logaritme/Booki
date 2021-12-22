@@ -8,7 +8,8 @@
   }
 
   body {
-    width: auto;
+    width: 100%;
+    height: auto;
   }
 
   .main-container {
@@ -17,7 +18,14 @@
     margin: 0;
   }
 
-  /* Logo and links */
+  /* HEADING */
+
+  .heading {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* LOGO AND LINKS */
 
   a:hover {
     border-top: #0065fc 3px solid;
@@ -35,7 +43,7 @@
     padding: unset;
   }
 
-  /* Logo */
+  /* LOGO */
 
   .logo {
     position: relative;
@@ -44,7 +52,15 @@
     width: 25%;
   }
 
-  /* Links */
+  /* LINKS */
+
+  .normal-link {
+    margin: auto;
+  }
+
+  #search-click {
+    border-radius: 17px;
+  }
 
   .nav-size-pos {
     width: 100%;
@@ -62,13 +78,17 @@
     display: flex;
     flex-flow: row nowrap;
   }
+
   .link {
     width: 50%;
     display: flex;
     justify-content: center;
+    text-align: center;
     border-bottom: 4px solid #f2f2f2;
     border-top: 0;
+    margin: auto;
   }
+
   .link:hover {
     border-bottom: 4px solid #0065fc;
     border-top: 0;
@@ -78,22 +98,17 @@
     border-top: 0;
   }
 
-  .normal-link {
-  }
-
   /* TEXT-ONLY */
 
   .text-only {
     height: 21%;
   }
 
-  /* Form */
+  /* FORM */
 
   .map-marker-radius {
     width: 50px;
   }
-
-  /* Form */
 
   .search {
     height: 9%;
@@ -141,8 +156,6 @@
     border-radius: 17px;
   }
 
-  /* End of form */
-
   /* 2.1.4 FILTERS AND INFORMATIONS*/
 
   /* 2.1.4.1 FILTERS */
@@ -173,7 +186,7 @@
     flex-flow: column-reverse nowrap;
   }
 
-  /* LODGING */
+  /* 2.1.6 | LODGING */
 
   .lodg {
     background-color: #fff;
@@ -195,6 +208,7 @@
     margin-top: 25px;
     padding-bottom: 3.5vh;
   }
+
   .sixth {
     background-color: #fff;
   }
@@ -212,22 +226,37 @@
     overflow: hidden;
   }
 
-  /* POPULARS */
+  /* 2.1.7 | MOST POPULARS */
 
   aside {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     margin: 0;
     padding: 0;
     border-radius: 0;
   }
 
-  .aside-flex {
+  .aside-top {
+    width: 90%;
+    height: auto;
+  }
+
+  .aside-size {
     width: 100%;
+    height: auto;
     display: flex;
     flex-flow: column-reverse nowrap;
-    justify-content: flex-start;
+  }
+
+  .aside-cards-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .aside-card-self {
+    width: 100%;
+    height: auto;
   }
 
   .sixth {
@@ -255,22 +284,10 @@
 
   .aside-card-self {
     width: 90%;
-    height: 14%;
+    height: auto;
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  .ul-links {
-  }
-  .normal-link {
-    margin: auto;
-  }
-
-  .link {
-    text-align: center;
-    margin: auto;
-  }
-  #search-click {
-    border-radius: 17px;
-  }
+  /* 2.1.8 | ACTIVITIES */
 }
