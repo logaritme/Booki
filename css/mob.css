@@ -314,7 +314,41 @@
 
   .act {
     width: 100%;
-    height: auto;
+    height: 2400px;
+  }
+
+  .act-block-cards {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0;
+  }
+
+  .act-quarter {
+    width: 90%;
+    height: 200px;
+    margin: 5%;
+  }
+
+  .column-in-row {
+    width: 90%;
+    height: 200px;
+    margin: 5%;
+  }
+
+  #act-size-first {
+    height: 100%;
+  }
+
+  #act-size-second {
+    height: 100%;
+  }
+
+  #act-size-third {
+    height: 100%;
+  }
+
+  #act-size-forth {
+    height: 100%;
   }
 
   /* 2.2 | SECONDARY CONTAINER */

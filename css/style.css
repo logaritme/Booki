@@ -952,7 +952,6 @@ main {
   flex-direction: row;
   align-items: center;
   margin-left: 7%;
-  /* border-style: ridge; */
 }
 
 .act-pointer {
@@ -985,8 +984,8 @@ main {
 }
 
 .act-quarter {
-  height: 100%;
   width: 22.5%;
+  height: 100%;
 }
 
 .act-quarter a {
@@ -1084,11 +1083,6 @@ footer {
   background-color: #f2f2f2;
   padding-top: 2%;
   padding-left: 5%;
-}
-
-.footer-column {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-font {
