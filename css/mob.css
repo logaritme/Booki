@@ -102,16 +102,23 @@
 
   .text-only {
     height: 21%;
+    padding-left: 5%;
   }
 
   /* FORM */
+
+  .search {
+    height: 9%;
+    padding-left: 5%;
+    padding-top: 1%;
+  }
 
   .map-marker-radius {
     width: 50px;
   }
 
-  .search {
-    height: 9%;
+  #site-search {
+    width: auto;
   }
 
   #form {
@@ -165,6 +172,7 @@
     height: 39%;
     display: flex;
     flex-flow: row wrap;
+    padding-left: 5%;
   }
 
   .filters-word {
@@ -177,6 +185,8 @@
 
   .informations {
     height: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   /* LODGING AND POPULARS */
