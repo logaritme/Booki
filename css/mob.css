@@ -4,17 +4,16 @@
   /*Règles mobiles*/
 
   html {
-    height: 250%;
+    height: 100%;
   }
 
   body {
-    width: 100%;
     height: auto;
   }
 
   .main-container {
     width: 100%;
-    height: 89%;
+    height: auto;
     margin: 0;
   }
 
@@ -22,7 +21,7 @@
 
   .heading {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   /* LOGO AND LINKS */
@@ -34,7 +33,7 @@
 
   .logo-and-links {
     width: 100%;
-    height: 18%;
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
@@ -99,14 +98,14 @@
   /* 2.1.2 | HEADING : SLOGAN */
 
   .text-only {
-    height: 21%;
+    height: auto;
     padding-left: 5%;
   }
 
   /* 2.1.3 | HEADING : SEARCH */
 
   .search {
-    height: 9%;
+    height: auto;
     padding-left: 5%;
     padding-top: 1%;
   }
@@ -167,7 +166,7 @@
 
   .filters-flex-position {
     width: 100%;
-    height: 39%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     padding-left: 5%;
@@ -179,12 +178,12 @@
   }
 
   .rounded-filters {
+    margin: 5px 5px 5px 0;
   }
 
   .informations {
-    height: 11%;
-    padding-left: 5%;
-    padding-right: 5%;
+    height: auto;
+    padding: 10px 5% 15px 5%;
   }
 
   /* 2.1.5 AND 2.1.6 | CONTAINER : LODGING CONTAINER & MOST POPULARS */
@@ -205,14 +204,20 @@
   }
 
   .lodg-text-over {
-    height: 5%;
+    width: 100%;
+    height: 60px;
     background-color: #fff;
   }
 
   .medium-text {
     margin-left: 3%;
-    font-size: 16px;
+    font-size: 24px;
     text-align: left;
+  }
+
+  #little-text {
+    font-size: 18px;
+    padding-left: 5%;
   }
 
   .six-cards-center {
@@ -220,7 +225,8 @@
   }
 
   .lodg-text-under {
-    height: 5%;
+    width: 100%;
+    height: 60px;
     background-color: #fff;
   }
 
@@ -242,7 +248,7 @@
 
   .fig-width {
     width: 100%;
-    /* justify-content: space-between; ou space-evenly*/
+    height: 230px;
     gap: 1vw;
     box-shadow: 8px 8px 8px grey;
     border-radius: 17px 17px 17px 17px;
@@ -251,6 +257,14 @@
     background-color: white;
     margin: 2.25%;
     overflow: hidden;
+  }
+
+  .bold {
+    font-size: 18px;
+  }
+
+  .small {
+    font-size: 16px;
   }
 
   /* 2.1.7 | MOST POPULARS */
@@ -316,10 +330,21 @@
 
   .act {
     width: 100%;
-    height: 2400px;
+    height: auto;
+    padding: 0 0 50px 0;
+  }
+
+  .act-title-height {
+    width: 100%;
+    height: 50px;
+  }
+
+  .title-activities {
+    padding-left: 5%;
   }
 
   .act-block-cards {
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
     gap: 0;
@@ -328,29 +353,33 @@
   .act-quarter {
     width: 90%;
     height: 200px;
-    margin: 5%;
+    margin: 20px;
   }
 
   .column-in-row {
     width: 90%;
-    height: 200px;
-    margin: 5%;
+    height: 440px;
+    margin: 20px;
   }
 
   #act-size-first {
-    height: 100%;
+    width: 100%;
+    height: 200px;
   }
 
   #act-size-second {
-    height: 100%;
+    width: 100%;
+    height: 200px;
   }
 
   #act-size-third {
-    height: 100%;
+    width: 100%;
+    height: 200px;
   }
 
   #act-size-forth {
-    height: 100%;
+    width: 100%;
+    height: 200px;
   }
 
   /* 2.2 | SECONDARY CONTAINER */
