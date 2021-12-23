@@ -17,6 +17,11 @@
     margin: 0;
   }
 
+  main {
+    width: 100%;
+    height: 80%;
+  }
+
   /* HEADING */
 
   .heading {
@@ -195,6 +200,7 @@
     height: auto;
     display: flex;
     flex-flow: column-reverse nowrap;
+    gap: 0;
   }
 
   /* 2.1.6 | LODGING */
@@ -230,10 +236,13 @@
     width: 100%;
     height: 60px;
     background-color: #fff;
+    display: flex;
+    align-items: center;
   }
 
   .left-border-radius {
-    margin-top: 1%;
+    margin-top: 0;
+    padding-top: 1%;
   }
 
   .fig-width {
@@ -263,7 +272,7 @@
   .aside-top {
     width: 90%;
     height: auto;
-    margin-left: 0;
+    padding: 5% 0 5% 0;
   }
 
   .aside-size {
@@ -290,19 +299,17 @@
     width: 0%;
     font-size: 24px;
     margin-top: 5%;
+    line-height: 3;
   }
 
   .top-h {
-    width: 77%;
+    width: 80%;
+    font-size: 24px;
+    letter-spacing: -1.2px;
   }
 
   .set-chart-line {
-    width: 21%;
-  }
-
-  .aside-top {
-    padding-top: 5%;
-    margin-left: 5%;
+    width: 14%;
   }
 
   .aside-card-self {
@@ -326,7 +333,8 @@
   }
 
   .title-activities {
-    padding-left: 5%;
+    padding: 2% 0 0 5%;
+    font-size: 24px;
   }
 
   .act-block-cards {
