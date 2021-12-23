@@ -256,9 +256,8 @@
     width: 100%;
     height: auto;
     display: flex;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+    justify-content: unset;
+    align-items: unset;
   }
 
   .aside-top {
@@ -277,6 +276,9 @@
   .aside-cards-column {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
 
   .aside-card-self {
@@ -290,12 +292,17 @@
     margin-top: 5%;
   }
 
+  .top-h {
+    width: 77%;
+  }
+
   .set-chart-line {
-    width: 30%;
+    width: 21%;
   }
 
   .aside-top {
     padding-top: 5%;
+    margin-left: 5%;
   }
 
   .aside-card-self {
