@@ -116,9 +116,6 @@ button {
   background-color: #0065fc;
 }
 
-button:hover {
-}
-
 div,
 section,
 header {
@@ -172,9 +169,6 @@ section {
   padding: 0;
   display: flex;
   flex-direction: column;
-}
-
-span {
 }
 
 ul {
@@ -414,9 +408,6 @@ input[type="search"] {
   font-size: 20px;
   padding: 16px 14px;
   color: black;
-}
-
-.filters-text:hover {
 }
 
 .filters-word {
