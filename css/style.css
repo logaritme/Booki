@@ -2,9 +2,8 @@
 
 1 || GLOBAL SETTINGS
     1.1 | GENERAL PAGE LAYOUT
-    1.2 | CARD DESIGN
-    1.3 | CARD SHADOW ANIMATION
-    1.4 | STARS PROPERTIES
+    1.2 | ANIMATIONS
+    1.3 | STARS PROPERTIES
 
 2 || DESKTOP LAYOUT
     2.1 | MAIN CONTAINER
@@ -542,7 +541,7 @@ main {
   background-color: rgb(255, 255, 255);
 }
 
-/* 2.1.5 | CONTAINER : LODGING */
+/* 2.1.6 | MAIN : LODGING */
 
 .lodg {
   width: 66%;
