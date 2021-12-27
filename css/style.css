@@ -24,15 +24,13 @@
     3.2 | MOBILE MEDIA QUERY
 
 
-Tip: you can jump to a specific section by searching for index name or id. ex : [CTRL + F] "3 ||" or [CTRL + F] "2.1.7 |"
+Tip: you can jump to a specific section by searching for index name or id. ex : [CTRL + F] "3 ||" or [CTRL + F] "2.1.5 |"
 
 */
 
 /* 1 || GLOBAL SETTINGS */
 
 /* 1.1 | GENERAL PAGE LAYOUT */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
 
 html {
   width: 100%;
@@ -526,8 +524,14 @@ input[type="search"] {
   font-weight: 500;
   padding-left: 10px;
 }
+/* 2.1.6 TO 2.1.8 | CONTAINER : MAIN => LODGING CONTAINER & MOST POPULARS + ACTIVITIES*/
 
-/* 2.1.5 AND 2.1.6 | CONTAINER : LODGING CONTAINER & MOST POPULARS */
+main {
+  width: 100%;
+  height: 75%;
+}
+
+/* 2.1.6 TO 2.1.7 | CONTAINER : LODGING CONTAINER & MOST POPULARS */
 
 .lodg-and-pop {
   width: 100%;
@@ -887,11 +891,6 @@ aside {
   align-items: stretch;
   flex-flow: column nowrap;
   overflow: hidden;
-}
-
-main {
-  width: 100%;
-  height: 75%;
 }
 
 /* 2.1.7 | ACTIVITIES */
