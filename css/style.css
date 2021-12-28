@@ -190,17 +190,17 @@ ul {
   background-color: #f2f2f2;
   }
 
-  .lodg-anchor:hover {
+  .lodging-anchor:hover {
     background-color: #f2f2f2;
     border-radius: 10%;
     border: 5px solid #f2f2f2;
   }
 
-  .cont-aside-size:hover {
+  .contents-aside-size:hover {
     background-color: #f2f2f2;
   }
 
-  .act-shadow:hover {
+  .activities-shadow:hover {
     background-color: #f2f2f2;
   }
 
@@ -654,7 +654,7 @@ main {
 
 /* 2.1.6 TO 2.1.7 | CONTAINER : LODGING & MOST POPULARS */
 
-.lodg-and-pop {
+.lodging-and-pop {
   width: 100%;
   height: 50%;
   display: flex;
@@ -665,7 +665,7 @@ main {
 
 /* 2.1.6 | MAIN : LODGING */
 
-.lodg {
+.lodging {
   width: 66%;
   height: 100%;
   display: flex;
@@ -688,7 +688,7 @@ main {
 
 /* SETTINGS FOR EACH LODGING CARD ITSELF */
 
-.fig-width {
+.figure-width {
   width: 27%;
   aspect-ratio: 4/3;
   display: flex;
@@ -704,7 +704,7 @@ main {
   overflow: hidden;
 }
 
-.lodg-anchor {
+.lodging-anchor {
   width: 100%;
   height: 100%;
   display: block;
@@ -725,7 +725,7 @@ main {
 }
 
 
-.lodg-img {
+.lodging-img {
   width: 100%;
   height: 100%;
   display: flex;
@@ -743,7 +743,7 @@ main {
 
 /* TITLE : "Hébergements" */
 
-.lodg-text-over {
+.lodging-text-over {
   width: 100%;
   height: 7.5%;
   display: flex;
@@ -759,7 +759,7 @@ main {
 
 /* SUB-TEXT : "Afficher plus" */
 
-.lodg-text-under {
+.lodging-text-under {
   width: 100%;
   height: 7.5%;
   display: flex;
@@ -780,7 +780,7 @@ main {
   padding-bottom: 4.5%;
 }
 
-.margin-lodging {
+.margin-lodginging {
   margin: 0 35px 0 0;
 }
 
@@ -864,7 +864,7 @@ aside {
   overflow: hidden;
 }
 
-.cont-aside-size {
+.contents-aside-size {
   width: 100%;
   height: 100%;
 }
@@ -909,7 +909,7 @@ aside {
 
 /* ACTIVITIES MAIN BLOCK */
 
-.act {
+.activities {
   width: 100%;
   height: 45%;
   display: flex;
@@ -921,7 +921,7 @@ aside {
 
 /* ACTIVITIES TITLE */
 
-.title-activities {
+.activities-title {
   padding: 5% 0 2% 0;
   font-size: 22px;
   font-weight: 700;
@@ -930,7 +930,7 @@ aside {
 
 /* FOR ALL THE ACTIVITIES CARDS */
 
-.act-block-cards {
+.activities-block-cards {
   width: 100%;
   height: 90%;
   display: flex;
@@ -939,7 +939,7 @@ aside {
   gap: 3.1%;
 }
 
-.figc-size-cont {
+.figurec-size-cont {
   display: flex;
   height: 50px;
   flex-direction: row;
@@ -947,16 +947,16 @@ aside {
   margin-left: 7%;
 }
 
-.act-shadow {
+.activities-shadow {
   box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.35);
   border-radius: 10% 10% 5% 5%;
 }
 
-.act-shadow a {
+.activities-shadow a {
   height: 100%;
 }
 
-.act-shadow a figure {
+.activities-shadow a figure {
   height: 100%;
 }
 
@@ -970,39 +970,39 @@ aside {
   background-color: white;
 }
 
-.act-block-cards-portrait {
+.activities-block-cards-portrait {
   width: 100%;
   height: calc(100% - 50px);
 }
 
-.act-quarter {
+.activities-quarter {
   width: 22.5%;
   height: 100%;
 }
 
-.act-quarter a {
+.activities-quarter a {
   height: 100%;
 }
 
-.act-quarter a figure {
+.activities-quarter a figure {
   height: 100%;
 }
 
 /* FOUR ACTIVITIES CARDS IN LANDSCAPE */
 
-#act-size-first {
+#activities-size-first {
   height: 60%;
 }
 
-#act-size-second {
+#activities-size-second {
   height: 30%;
 }
 
-#act-size-third {
+#activities-size-third {
   height: 43%;
 }
 
-#act-size-forth {
+#activities-size-forth {
   height: 47%;
 }
 
@@ -1015,7 +1015,7 @@ aside {
   gap: 10%;
 }
 
-.act-block-card-adapt {
+.activities-block-card-adapt {
   width: 100%;
   height: calc(100% - 50px);
 }

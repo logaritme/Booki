@@ -195,7 +195,7 @@
 
   /* CONTAINER : LODGING & MOST POPULARS */
 
-  .lodg-and-pop {
+  .lodging-and-pop {
     width: 100%;
     height: auto;
     display: flex;
@@ -205,13 +205,13 @@
 
   /* LODGING */
 
-  .lodg {
+  .lodging {
     width: 100%;
     height: auto;
     background-color: #fff;
   }
 
-  .lodg-text-over {
+  .lodging-text-over {
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -232,7 +232,7 @@
     height: auto;
   }
 
-  .lodg-text-under {
+  .lodging-text-under {
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -245,7 +245,7 @@
     padding-top: 1%;
   }
 
-  .fig-width {
+  .figure-width {
     width: 100%;
     height: 230px;
     border-radius: 17px 17px 17px 17px;
@@ -315,30 +315,30 @@
 
   /* ACTIVITIES */
 
-  .act {
+  .activities {
     width: 100%;
     height: auto;
     padding: 0 0 50px 0;
   }
 
-  .act-title-height {
+  .activities-title-height {
     width: 100%;
     height: 50px;
   }
 
-  .title-activities {
+  .activities-title {
     padding: 2% 0 0 5%;
     font-size: 24px;
   }
 
-  .act-block-cards {
+  .activities-block-cards {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     gap: 0;
   }
 
-  .act-quarter {
+  .activities-quarter {
     width: 90%;
     height: 200px;
     margin: 20px;
@@ -350,22 +350,22 @@
     margin: 20px;
   }
 
-  #act-size-first {
+  #activities-size-first {
     width: 100%;
     height: 200px;
   }
 
-  #act-size-second {
+  #activities-size-second {
     width: 100%;
     height: 200px;
   }
 
-  #act-size-third {
+  #activities-size-third {
     width: 100%;
     height: 200px;
   }
 
-  #act-size-forth {
+  #activities-size-forth {
     width: 100%;
     height: 200px;
   }
