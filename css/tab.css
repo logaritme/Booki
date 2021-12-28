@@ -90,7 +90,7 @@
     height: 80%;
   }
 
-  /* CONTAINER : LODGING CONTAINER & MOST POPULARS */
+  /* CONTAINER : LODGING & MOST POPULARS */
 
   .lodg-and-pop {
     width: 100%;
@@ -137,7 +137,7 @@
     text-align: center;
   }
 
-  /* THE MOST POPULARS */
+  /* MOST POPULARS */
 
   aside {
     width: 100%;
@@ -151,7 +151,6 @@
   }
 
   .aside-cards-column {
-    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
