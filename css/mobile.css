@@ -145,10 +145,12 @@
     border-radius: 17px;
     transform: translate(-50%);
   }
+/* Make disappear the "Rechercher" button */
 
   #search-click {
     display: none;
   }
+/* Make appear the search icone button */
 
   #search-click-mobile {
     display: flex;
